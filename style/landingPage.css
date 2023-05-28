@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #83EFF5, white);
+    height: 90vh;
+}
+
+section{
+    min-height: 100vh;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 35px;
+    box-sizing: border-box;
+}
+
+#logo img{
+    width: 75px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+#navbar-right{
+    width: 190px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 10px ;
+}
+
+#about-us-button:hover{
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+#sign-up-button{
+    border-radius: 10px;
+    background-color: #68c48c;
+}
+
+#sign-up-button:hover{
+    background-color: #093b4b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 2px 0 4px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+    color: white;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+#title{
+    font-weight: 800;
+    font-size: 64px;
+    font-family: 'Lobster', cursive;
+}
+
+#subtitle{
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+#get-started{
+    text-decoration: none;
+    color: black;
+    border: 4px solid #093b4b;
+    font-size: 28px;
+    padding: 15px;
+    border-radius: 30px;
+    transition: 0.3s;
+    width: 180px;
+    text-align: center;
+}
+
+#get-started:hover{
+    background-color: #093b4b;
+    color: white;
+    border: 4px solid #093b4b;
+    transition: 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+#bg-1, #bg-2, #deer{
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#bg-2{
+    bottom: 0;
+    width: 100%;
+    z-index: -2;
+}
+
+#bg-1{
+    bottom: 200px;
+    z-index: -3;
+}
+
+#deer{
+    bottom: 0px;
+    z-index: -1;
+}
+
+#about-us{
+    background-color: #103c4c;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-us-title{
+    font-size: 56px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#first-row, #second-row{
+    display: flex;
+    margin-top: 50px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    width: 250px;
+}
+
+.profile-picture{
+    width: 180px;
+    margin-bottom: 15px;
+}
+
+.name{
+    font-size: 22px;
+}

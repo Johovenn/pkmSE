@@ -1,0 +1,11 @@
+project note
+
+colors :
+primary = f5f5f5
+accent color = 093b4b
+buttons = 68c48c
+background color : #507bb8 to #2e8982
+
+fonts :
+normal text = poppins
+titles = lobster
