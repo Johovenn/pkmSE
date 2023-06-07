@@ -179,4 +179,68 @@ nav img{
 
 .content{
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.form-check-username{
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+.check-username{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.new-username{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.input-group label{
+    font-size: 16px;
+}
+
+input[type="text"]{
+    padding: 5px;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="submit"]{
+    width: 80px;
+    padding: 5px;
+}
+
+.popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    display: none; /* Hide the container by default */
 }

@@ -1,6 +1,6 @@
 <?php 
     include("../../../script/dbconnection.php");
-    include("../../../script/changePassword.php");
+    include("../../../script/resetPassword.php");
 ?>
 
 <!DOCTYPE html>
@@ -69,7 +69,6 @@
 
                     <input type="submit">
                 </form>
-                <?php echo $message ?>
             </div>
         </div>
     </div>

@@ -1,3 +1,8 @@
+<?php
+    include ("../../../script/dbconnection.php");
+    include ("../../../script/resetUsername.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +51,28 @@
                 </ul>
             </div>
             <div class="content">
-                ini content
+                <div class="title">Change Username</div>
+                
+                <form action="changeUsername.php" method="post" class="form-check-username">
+                    <div class="check-username">
+                        <label for="check">New Username</label>
+                        <input type="text" name="check">
+                    </div>
+                    <input type="submit">
+                    <?php
+                        echo $errorMessage;
+                    ?>
+                </form>
+
+                <button onclick="openPopup()">open popup</button>
+
+                <div id="popupContainer" class="popup-container">
+                    <h2>Pop-up Message</h2>
+                    <p>This is a pop-up message.</p>
+                    <button onclick="hidePopup()">Close</button>
+                </div>
+
+                <script src="../../../script/popup.js"></script>
             </div>
         </div>
     </div>
