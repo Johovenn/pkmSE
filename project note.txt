@@ -1,11 +1,13 @@
 project note
 
 colors :
-primary = f5f5f5
-accent color = 093b4b
-buttons = 68c48c
-background color : #507bb8 to #2e8982
+0A4D68
+088395
+05BFDB
+00FFCA
+FFB039
 
 fonts :
-normal text = poppins
-titles = lobster
+normal text = kanit
+title = rubik
+alay = lobster
