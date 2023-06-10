@@ -63,16 +63,6 @@
                         echo $errorMessage;
                     ?>
                 </form>
-
-                <button onclick="openPopup()">open popup</button>
-
-                <div id="popupContainer" class="popup-container">
-                    <h2>Pop-up Message</h2>
-                    <p>This is a pop-up message.</p>
-                    <button onclick="hidePopup()">Close</button>
-                </div>
-
-                <script src="../../../script/popup.js"></script>
             </div>
         </div>
     </div>

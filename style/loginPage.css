@@ -2,8 +2,8 @@ body{
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #83EFF5, white);
-    font-family: Poppins, sans-serif;
-    color: white;
+    font-family: Rubik, sans-serif;
+    color: black;
     height: 90vh;
 }
 
@@ -55,16 +55,19 @@ body{
 }
 
 #form-box{
-    background-color: #093b4b;
+    background-color: transparent;
     width: 400px;
     border: none;
     border-radius: 20px;
+    border: 3px solid #093b4b;
+    backdrop-filter: blur(20px);
 }
 
 .title {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 30px;
+    
 }
 
 #content form{
@@ -85,13 +88,13 @@ body{
 }
 
 #content form input{
-    background-color: #104e62;
+    background-color: #ffffff;
     padding: 15px;
     border: none;
     border-radius: 20px;
     width: 200px;
     outline: black;
-    color: white;
+    color: rgb(42, 42, 42);
     font-family: Poppins, sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -100,24 +103,24 @@ body{
 }
 
 #content form input:focus{
-    background-color: #1c6983;
+    background-color: #d8d8d8;
     transition: 0.3s;
 }
 
 #content form input::placeholder{
     color: rgb(168, 165, 165);
-    font-family: Poppins, sans-serif;
+    font-family: Rubik, sans-serif;
     font-size: 16px;
     font-weight: 500;
 }
 
 #content input[type="submit"]{
     padding: 15px;
-    background-color: #68c48c;
+    background-color: #f59c17;
     border: none;
     border-radius: 20px;
     color: white;
-    font-family: Poppins, sans-serif;
+    font-family: Rubik, sans-serif;
     font-weight: bold;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -127,7 +130,7 @@ body{
 }
 
 #content input[type="submit"]:hover{
-    background-color: #5fac7c;
+    background-color: #dc8606;
     transition: 0.3s;
 }
 
@@ -138,7 +141,7 @@ body{
 }
 
 #sign-in-link a{
-    color: rgb(170, 0, 255);
+    color: #f59c17;
     font-weight: bold;
 }
 

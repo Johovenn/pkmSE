@@ -5,6 +5,7 @@
     $emailError = "";
     $passwordError = "";
     $confirmError = "";
+    $errorMessage = "";
     $_SESSION["registerStatus"] = "Login into your account here!";
     $_SESSION["username"] = "";
 
@@ -17,25 +18,30 @@
         $sql = "SELECT * FROM userdata WHERE username = '$username'";
         $result = mysqli_query($conn, $sql);
 
-        if(mysqli_num_rows($result) == 0){
-            if(strpos($email, "@gmail.com") !== false){
-                if(strcmp($password, $confirm) == 0){
-                    $sql = "INSERT INTO `userdata`(`id`, `username`, `email`, `password`) VALUES ('','$username','$email','$password')";
-                    $result = mysqli_query($conn, $sql);
-                    $_SESSION["registerStatus"] = "You have successfully registered your account.";
-    
-                    header("Location: loginPage.php");
+        if(!empty($username) && !empty($email) && !empty($password) && !empty($confirm)){
+            if(mysqli_num_rows($result) == 0){
+                if(strpos($email, "@gmail.com") !== false){
+                    if(strcmp($password, $confirm) == 0){
+                        $sql = "INSERT INTO `userdata`(`id`, `username`, `email`, `password`) VALUES ('','$username','$email','$password')";
+                        $result = mysqli_query($conn, $sql);
+                        $_SESSION["registerStatus"] = "You have successfully registered your account.";
+        
+                        header("Location: loginPage.php");
+                    }
+                    else{
+                        $confirmError = "Password doesn't match!";
+                    }
                 }
                 else{
-                    $confirmError = "Password doesn't match!";
+                    $emailError = "Email must contain '@gmail.com'";
                 }
             }
             else{
-                $emailError = "Email must contain '@gmail.com'";
+                $usernameError = "This username is not available!";
             }
         }
         else{
-            $usernameError = "This username is not available!";
+            $errorMessage = "Please fill in all the forms!";
         }
     }
 ?>

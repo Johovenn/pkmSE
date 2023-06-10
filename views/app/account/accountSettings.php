@@ -46,7 +46,7 @@
                 </ul>
             </div>
             <div class="content">
-                ini content
+                <a href="../../landingPage.html" class="log-out-button">Log Out</a>
             </div>
         </div>
     </div>

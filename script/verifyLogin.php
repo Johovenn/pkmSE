@@ -13,20 +13,25 @@
         $sql = "SELECT * FROM userdata WHERE username = '$username'";
         $result = mysqli_query($conn, $sql);
 
-        if(mysqli_num_rows($result) == 1){
-            $row = mysqli_fetch_assoc($result);
-            
-            if(strcmp($password, $row["password"]) == 0){
-                $_SESSION["loginStatus"] = true;
-                $_SESSION["username"] = $username;
-                header("Location: app/quizPage.php");
+        if(!empty($username) && !empty($password)){
+            if(mysqli_num_rows($result) == 1){
+                $row = mysqli_fetch_assoc($result);
+                
+                if(strcmp($password, $row["password"]) == 0){
+                    $_SESSION["loginStatus"] = true;
+                    $_SESSION["username"] = $username;
+                    header("Location: app/quizPage.php");
+                }
+                else{
+                    $errorMessage = "Invalid username or password!";
+                }
             }
             else{
-                $errorMessage = "Incorrect Password!";
+                $errorMessage = "Invalid username or password!";
             }
         }
         else{
-            $errorMessage = "Invalid username or password!";
+            $errorMessage = "Please fill in all the forms!";
         }
     }
 ?>

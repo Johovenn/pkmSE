@@ -1,7 +1,7 @@
 :root{
     --primary-color: #093b4b; 
     --secondary-color: #68c48c;
-    --background-color: #f5f5f5;
+    --background-color: #f8f8f8;
     --icon-color: #0d60a5;
 }
 
@@ -10,24 +10,8 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
-    font-family: Poppins, sans-serif;
+    font-family: "Rubik", sans-serif;
     background-color: var(--background-color);
-    /* background-image: url(../images/quiz-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-}
-
-body::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(1px);
-    background-color: rgba(255, 255, 255, 0.5);
-    z-index: -1;
 }
 
 nav{
@@ -119,4 +103,124 @@ nav img{
 .logout-button a{
     color: black;
     text-decoration: none;
+}
+.change-province-button {
+    position: relative;
+    display: inline-block;
+}
+
+.current-province img {
+    width: 40px;
+    padding: 10px;
+    background-color: #e8e8e8;
+    border-radius: 15px;
+}
+
+.dropdown-container {
+    position: absolute;
+    min-width: 160px;
+    right: 0;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 20px;
+    outline: 2px solid #d7d7d7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: 0.3s;
+}
+
+hr {
+    width: 100%;
+}
+
+.enrolled-province {
+    display: flex;
+    align-items: center;
+}
+
+.enrolled-province img {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.dropdown-container span {
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    color: grey;
+}
+
+.enrolled-province,
+.add-new-province,
+.dropdown-container span {
+    margin-left: 6px;
+}
+
+.dropdown-container {
+    display: none;
+}
+
+.change-province-button:hover .dropdown-container {
+    display: block;
+}
+
+.change-province-button:hover .current-province img {
+    background-color: #d0d0d0;
+    transition: 0.3s;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#accordion{
+    /* margin: 100px auto; */
+    width: 600px;
+}
+
+#accordion li{
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#accordion li label{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #c20000;
+    background-color: antiquewhite;
+    height: 100px;
+}
+
+#accordion li label span{
+    font-size: 22px;
+    color: #333;
+}
+
+#accordion label + input[type="checkbox"]{
+    display: none;
+}
+
+#accordion .content{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+#accordion label  + input[type="checkbox"]:checked + .content{
+    max-height: 600px;
 }

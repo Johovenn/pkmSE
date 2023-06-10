@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../style/registerPage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head> 
 <body>
     <img id="bg-1" src="../images/background1.png" alt="">
@@ -25,7 +25,7 @@
             <img src="../images/logo indocano 2.png" alt="">
         </div>
         <div id="navbar-right">
-            <a href="landingPage.html">Home</a>
+            <a href="landingPage.html">Back to Home</a>
         </div>
     </div>
     <div id="content">
@@ -53,6 +53,7 @@
                     <input type="password" placeholder="Confirm your password" name="confirm">
                     <span class="validation-message"><?php if(!empty($confirmError)) echo $confirmError; $confirmError = "";?></span>
                 </div>
+                <span class="validation-message"><?php if(!empty($errorMessage)) echo $errorMessage; $errorMessage = "";?></span>
                 <input type="submit">
             </form> 
         </div>

@@ -1,9 +1,10 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom, #83EFF5, white);
+    font-family: 'Kanit', sans-serif;
+    background: linear-gradient(to bottom, #83EFF5, white) no-repeat;
     height: 90vh;
+    scroll-behavior: smooth;
 }
 
 section{
@@ -26,9 +27,10 @@ section{
 }
 
 #navbar-right{
-    width: 190px;
+    width: 250px;
     display: flex;
     justify-content: space-between;
+    font-family: 'Rubik', sans-serif;
 }
 
 .nav{
@@ -39,7 +41,7 @@ section{
     padding: 10px ;
 }
 
-#about-us-button:hover{
+#about-us-button:hover, #login-button:hover{
     transform: translateY(-5px);
     transition: 0.3s ease;
 }
@@ -71,6 +73,7 @@ section{
 }
 
 #subtitle{
+    font-family: 'Rubik', sans-serif;
     font-size: 28px;
     font-weight: 600;
     margin-top: 10px;
@@ -87,6 +90,8 @@ section{
     transition: 0.3s;
     width: 180px;
     text-align: center;
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
 }
 
 #get-started:hover{
@@ -120,7 +125,7 @@ section{
 }
 
 #about-us{
-    background-color: #103c4c;
+    background-color: #0b4f69;
     color:white;
     display: flex;
     flex-direction: column;
@@ -163,4 +168,85 @@ section{
 
 .name{
     font-size: 22px;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+}
+
+#information-page{
+    background: linear-gradient(to bottom, #90e8d9, #0A4D68);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#information-title{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    margin-top: 30px;
+    text-shadow: 2px 4px 4px rgba(255, 146, 29, 0.6)
+}
+
+.information{
+    display: flex;
+    align-items: center;
+}
+
+.information1{
+    margin-top: 50px;
+}
+
+.text{
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text:nth-child(odd){
+    margin-right: 50px;
+}
+
+.text:nth-child(even){
+    margin-left: 50px;
+}
+
+.text span{
+    font-family: 'Rubik', sans-serif;
+    color: #FFB039;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 4px 4px rgba(255, 146, 29, 0.6)
+}
+
+.text p{
+    line-height: 1.5;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+
+.image img{
+    width: 400px;
+    transition: 0.3s;
+}
+
+.image img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.text a{
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    background-color: #FFB039;
+    border-radius: 15px;
+    margin-top: 10px;
+    width: 90px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.text a:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
