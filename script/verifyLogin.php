@@ -20,7 +20,7 @@
                 if(strcmp($password, $row["password"]) == 0){
                     $_SESSION["loginStatus"] = true;
                     $_SESSION["username"] = $username;
-                    header("Location: app/quizPage.php");
+                    header("Location: app/quiz/quizPage.php");
                 }
                 else{
                     $errorMessage = "Invalid username or password!";

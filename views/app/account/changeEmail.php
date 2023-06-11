@@ -16,7 +16,7 @@
 
         <div class="navigation">
             <div class="nav-logo">
-                <a href="../quizPage.php"><i class="fa-solid fa-person-chalkboard"></i></a>
+                <a href="../quiz/quizPage.php"><i class="fa-solid fa-person-chalkboard"></i></a>
                 <span class="text">Quiz</span>
             </div>
 
