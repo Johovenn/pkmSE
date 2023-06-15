@@ -1,0 +1,91 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Rubik, sans-serif;
+}
+
+.back-home{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 20px;
+    transition: 0.3s;
+    z-index: 100;
+}
+
+.back-home:hover{
+    transform: translateX(-5px);
+    transition: 0.3s;
+}
+
+ion-icon{
+    margin-right: 5px;
+    font-size: 30px;
+}
+
+.question:not(#question1){
+    display: none;
+}
+
+.question-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 200px;
+    background-color: rgb(186, 186, 186);
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+    max-height: 300px;
+}
+
+.question{
+    display: flex;
+    align-items: center;
+}
+
+.answer-container{
+    margin-left: 20px;
+}
+
+.answer-container p{
+    font-size: 20px;
+    width: 400px;
+}
+
+.answer-container button{
+    font-family: Rubik, sans-serif;
+    background-color: transparent;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    font-size: 16px;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.answer-container button:hover{
+    background-color: rgb(229, 229, 229);
+}
+
+.submit-button{
+    margin-top: 30px;
+    padding: 10px;
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+    background-color: rgba(255, 146, 29);
+    border: none;
+    border-radius: 5px;
+}
