@@ -21,17 +21,20 @@
 
         <div class="navigation">
             <div class="nav-logo">
-                <a href="quizPage.php"><i class="fa-solid fa-person-chalkboard"></i></a>
-                <span class="text">Quiz</span>
+                <!-- <a href="quizPage.php"><i class="fa-solid fa-person-chalkboard"></i></a> -->
+                <a href="quizPage.php"><ion-icon name="barbell-outline"></ion-icon></a>
+                <span class="text">Train</span>
             </div>
 
             <div class="nav-logo">
-                <a href=""><i class="fa-solid fa-book"></i></a>
+                <!-- <a href=""><i class="fa-solid fa-book"></i></a> -->
+                <a href="quizPage.php"><ion-icon name="book-outline"></ion-icon></a>
                 <span class="text">Learn</span>
             </div>
 
             <div class="nav-logo">
-                <a href="../account/changeUsername.php"><i class="fa-solid fa-user"></i></a>
+                <!-- <a href="../account/changeUsername.php"><i class="fa-solid fa-user"></i></a> -->
+                <a href="../account/changeUsername.php"><ion-icon name="person-outline"></ion-icon></a>
                 <span class="text">Account</span>
             </div>  
         </div>
@@ -57,7 +60,7 @@
     <main>
         <ul id="accordion">
             <li>
-                <label for="first">
+                <label for="first" id="first-quiz">
                     <div>
                         <p>Quiz 1</p>
                         <p>Test your common knowledge about the province</p>
@@ -76,7 +79,7 @@
                 </div>
             </li>
             <li>
-                <label for="second">
+                <label for="second" id="second-quiz">
                     <div>
                         <p>Quiz 2</p>
                         <p>Deepen your knowledge about the province</p>
@@ -90,12 +93,12 @@
                         <p>Minimum Passing Score : 65</p>
                     </div>
                     <div class="content-right">
-                        <a href="#">Start Quiz</a>
+                        <a href="quiz2.php">Start Quiz</a>
                     </div>
                 </div>
             </li>
             <li>
-                <label for="third">
+                <label for="third" id="third-quiz">
                     <div>
                         <p>Final Quiz</p>
                         <p>Get on the ultimate quiz about the province</p>

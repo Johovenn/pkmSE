@@ -53,6 +53,12 @@ nav img{
     align-items: center;
 }
 
+ion-icon{
+    font-size: 32px;
+    color: var(--icon-color);
+    --ionicon-stroke-width: 40px;
+}
+
 .nav-logo a i{
     color: var(--icon-color);
     font-size: 28px;
@@ -169,6 +175,10 @@ hr {
     transition: 0.3s;
 }
 
+.change-province-button .current-province img {
+    transition: 0.3s;
+}
+
 main{
     width: 100%;
     height: 100%;
@@ -178,7 +188,6 @@ main{
 }
 
 #accordion{
-    /* margin: 100px auto; */
     width: 600px;
 }
 
@@ -186,9 +195,9 @@ main{
     list-style: none;
     width: 100%;
     margin-bottom: 10px;
-    background: #fff;
+    background: rgb(209, 244, 255);
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 #accordion li label{
@@ -199,14 +208,46 @@ main{
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
-    color: #c20000;
     background-color: antiquewhite;
     height: 100px;
+    border-radius: 20px;
 }
+
+#first-quiz{
+    background-image: url(../images/quiz1-background.jpg);
+    background-size: cover;
+    background-position: center;
+
+    color: black;
+    text-shadow: 2px 2px white;
+}
+
+#second-quiz{
+    background-image: url(../images/quiz2-background.jpg);
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+#third-quiz{
+    background-image: url(../images/quiz3-background.jpg);
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
 
 #accordion li label span{
     font-size: 22px;
     color: #333;
+}
+
+#second-quiz span, #third-quiz span{
+    color: white;
 }
 
 #accordion label + input[type="radio"]{
