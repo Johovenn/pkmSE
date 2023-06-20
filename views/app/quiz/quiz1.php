@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../style/quiz1.css">
+    <script defer src="../../../script/quiz1.js"></script>
 </head>
 <body>
 <a class="back-home" href="quizPage.php"><ion-icon name="arrow-back-circle-outline"></ion-icon> Back to Home</a>
