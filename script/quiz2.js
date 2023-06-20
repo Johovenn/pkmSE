@@ -81,6 +81,15 @@ function selectAnswer(e){
         setStatusClass(button, button.dataset.correct)
         button.disabled = true;
     })
+
+    if(correct){ //play sfx correct kalo bener
+        correctSound.play()
+        correctCount++
+    }
+    else{ //play sfx salah kalo salah
+        wrongSound.play()
+    }
+    
     if(shuffledQuestions.length > currentQuestionIndex + 1){
         nextButton.classList.remove("hide")
     }
@@ -89,14 +98,6 @@ function selectAnswer(e){
         // startButton.classList.remove("hide")
         questionContainerElement.classList.add("hide")
         showResult()
-    }
-
-    if(correct){ //play sfx correct kalo bener
-        correctSound.play()
-        correctCount++
-    }
-    else{ //play sfx salah kalo salah
-        wrongSound.play()
     }
 }
 

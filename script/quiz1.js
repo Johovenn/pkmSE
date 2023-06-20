@@ -81,6 +81,15 @@ function selectAnswer(e){
         setStatusClass(button, button.dataset.correct)
         button.disabled = true;
     })
+
+    if(correct){ //play sfx correct kalo bener
+        correctSound.play()
+        correctCount++
+    }
+    else{ //play sfx salah kalo salah
+        wrongSound.play()
+    }
+
     if(shuffledQuestions.length > currentQuestionIndex + 1){
         nextButton.classList.remove("hide")
     }
@@ -89,14 +98,6 @@ function selectAnswer(e){
         // startButton.classList.remove("hide")
         questionContainerElement.classList.add("hide")
         showResult()
-    }
-
-    if(correct){ //play sfx correct kalo bener
-        correctSound.play()
-        correctCount++
-    }
-    else{ //play sfx salah kalo salah
-        wrongSound.play()
     }
 }
 
@@ -137,37 +138,91 @@ const questions=[
     {
         question: "Pulau Bali memiliki julukan",
         answers: [
-            {text: 'Pulau Seribu Pura', correct: false},
+            {text: 'Pulau Seribu Pura', correct: true},
             {text: 'Pulau Seribu Rumah', correct: false},
             {text: 'Pulau Seribu Sungai', correct: false},
-            {text: 'Pulau Seribu Gunung', correct: true}
+            {text: 'Pulau Seribu Gunung', correct: false}
         ]
     },
     {
-        question: "Nama danau yang terletak di Pulau Bali adalah",
+        question: "Pura terkenal yang terletak di Pulau Bali adalah",
         answers: [
-            {text: 'Danau Toba', correct: false},
-            {text: 'Danau Beratan', correct: true},
-            {text: 'Danau Singkarak', correct: false},
-            {text: 'Danau Sentani', correct: false}
+            {text: 'Pura Giri Arjuno', correct: false},
+            {text: 'Pura Salaka Alas Purwo', correct: false},
+            {text: 'Pura Agung Blambangan', correct: false},
+            {text: 'Pura Tanah Lot', correct: true}
         ]
     },
     {
-        question: "Ibukota dari Provinsi Bali adalah",
+        question: "Bali terkenal dengan seni tari tradisionalnya, yang bernama",
         answers: [
-            {text: 'Denpasar', correct: true},
-            {text: 'Flores', correct: false},
-            {text: 'Gianyar', correct: false},
-            {text: 'Badung', correct: false}
+            {text: 'Tari Saman', correct: false},
+            {text: 'Tari Kecak', correct: true},
+            {text: 'Tari Piring', correct: false},
+            {text: 'Tari Zapin', correct: false}
         ]
     },
     {
-        question: "Diantara ini yang bukan merupakan upacara adat Bali adalah",
+        question: "Upacara Nyepi adalah bagian dari tradisi",
         answers: [
-            {text: 'Upacara Ngaben', correct: false},
-            {text: 'Upacara Sadranan', correct: true},
-            {text: 'Upacara Melasti', correct: false},
-            {text: 'Upacara Saraswati', correct: false}
+            {text: 'Hindu Bali', correct: true},
+            {text: 'Islam Bali', correct: false},
+            {text: 'Buddha Bali', correct: false},
+            {text: 'Kristen Bali', correct: false}
         ]
     },
+    {
+        question: "Nama dari peninggalan sejarah megalitikum di Bali yang berupa punden berundak dan terletak di Desa Pejeng, Gianyar adalah",
+        answers: [
+            {text: 'Candi Borobudur', correct: false},
+            {text: 'Candi Prambanan', correct: false},
+            {text: 'Punden Berundak Pejeng', correct: true},
+            {text: 'Candi Sewu', correct: false}
+        ]
+    },
+    {
+        question: "Hewan endemik yang bisa ditemukan di Bali adalah",
+        answers: [
+            {text: 'Burung Jalak Bali', correct: true},
+            {text: 'Orangutan Bali', correct: false},
+            {text: 'Komodo', correct: false},
+            {text: 'Harimau Bali', correct: false}
+        ]
+    },
+    {
+        question: "Bali dikenal oleh peminat olahraga air, salah satu olahraganya yaitu",
+        answers: [
+            {text: 'Surfing', correct: true},
+            {text: 'Polo Air', correct: false},
+            {text: 'Balapan Renang', correct: false},
+            {text: 'Ski Air', correct: false}
+        ]
+    },
+    {
+        question: "Bahasa yang paling banyak digunakan di Pulau Bali adalah",
+        answers: [
+            {text: 'Bahasa Jawa', correct: false},
+            {text: 'Bahasa Sunda', correct: false},
+            {text: 'Bahasa Bali', correct: true},
+            {text: 'Bahasa Indonesia', correct: false}
+        ]
+    },
+    {
+        question: "Mata pencaharian utama masyarakat Bali ada pada sektor",
+        answers: [
+            {text: 'Perminyakan', correct: false},
+            {text: 'Pertambangan', correct: false},
+            {text: 'Manufaktur', correct: false},
+            {text: 'Pariwisata', correct: true}
+        ]
+    },
+    {
+        question: "Jatiluwih, yang terkenal karena sawah teraseringnya, terletak di kabupaten",
+        answers: [
+            {text: 'Tabanan', correct: true},
+            {text: 'Klungkung', correct: false},
+            {text: 'Badung', correct: false},
+            {text: 'Gianyar', correct: false}
+        ]
+    }
 ]

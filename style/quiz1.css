@@ -1,7 +1,31 @@
-body{
-    padding: 0;
-    margin: 0;
+*, *::before, *::after{
+    box-sizing: border-box;
     font-family: Rubik, sans-serif;
+}
+
+:root{
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+body{
+    --hue: var(--hue-neutral);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+body.correct{
+    --hue: var(--hue-correct);
+}
+
+body.wrong{
+    --hue: var(--hue-wrong);
 }
 
 .back-home{
@@ -27,65 +51,122 @@ ion-icon{
     font-size: 30px;
 }
 
-.question:not(#question1){
-    display: none;
-}
-
-.question-container{
+progress{
     position: absolute;
-    top: 50%;
+    top: 45px;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 40vw;
+    height: 30px;
+    transition: width 0.5s ease-in-out;
+}
+
+#progress-bar::-webkit-progress-bar {
+    background-color: #f1f1f1;
+  }
+  
+#progress-bar::-webkit-progress-value {
+    background-color: darkslateblue;
+    transition: width 0.5s ease-in-out;
+}
+  
+#progress-bar::-moz-progress-bar {
+    background-color: darkslateblue;
+    transition: width 0.5s ease-in-out;
+}
+
+.container{
+    width: 600px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    box-shadow: 0 0 10px 1px;
 }
 
-img{
-    width: 200px;
-    background-color: rgb(186, 186, 186);
-    padding: 30px;
-    border: 2px solid black;
-    border-radius: 20px;
-    max-height: 300px;
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
 }
 
-.question{
-    display: flex;
-    align-items: center;
-}
-
-.answer-container{
-    margin-left: 20px;
-}
-
-.answer-container p{
-    font-size: 20px;
-    width: 400px;
-}
-
-.answer-container button{
-    font-family: Rubik, sans-serif;
-    background-color: transparent;
-    padding: 10px;
-    width: 100px;
-    height: 100px;
-    margin-right: 15px;
-    font-size: 16px;
-    transition: 0.3s;
-    border-radius: 15px;
-}
-
-.answer-container button:hover{
-    background-color: rgb(229, 229, 229);
-}
-
-.submit-button{
-    margin-top: 30px;
-    padding: 10px;
-    font-family: Rubik, sans-serif;
-    font-size: 16px;
-    background-color: rgba(255, 146, 29);
-    border: none;
+.btn{
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 80%);
+    padding: 5px 10px;
     border-radius: 5px;
+    color: black;
+    outline: none;
+    font-family: Rubik, sans-serif;
+}
+
+.btn:hover{
+    border-color: black;
+    background-color: hsl(var(--hue), 100%, 70%);
+}
+
+.btn.correct{
+    --hue: var(--hue-correct);
+    color: black;
+}
+
+.btn.wrong{
+    --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn, .continue-btn{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls button{
+    margin: 10px;
+}
+
+#question{
+    font-size: 20px;
+}
+
+.answer-btn{
+    height: 100px;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.quiz-finish-image img{
+    width: 600px;
+}
+
+.message{
+    font-size: 20px;
+}
+
+.hide{
+    display: none;
+    transition: 0.5s;
+}
+
+.ready{
+    font-size: 24px;
+    margin: 20px 0 20px 0;
 }
