@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../style/quiz2.css">
     <script defer src="../../../script/quiz2.js"></script>
+    <link rel="icon" href="../../../images/logo indocano 2.png">
 </head>
 <body>
     <a class="back-home" href="quizPage.php"><ion-icon name="arrow-back-circle-outline"></ion-icon> Back to Home</a>

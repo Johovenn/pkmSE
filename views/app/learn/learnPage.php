@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/17cb31a600.js" crossorigin="anonymous"></script>
     <title>IndoCano</title>
+    <link rel="icon" href="../../../images/logo indocano 2.png">
 </head>
 <body>
     <nav>

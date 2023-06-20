@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IndoCano</title>
-    <script src="https://kit.fontawesome.com/804c059b40.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../../images/logo indocano 2.png">
     <link rel="stylesheet" href="../../../style/quizPage.css">
 </head>
 <body>
@@ -31,7 +31,7 @@
             </div>
 
             <div class="nav-logo">
-                <a href="../account/changeUsername.php"><ion-icon name="person-outline"></ion-icon></a>
+                <a href="../account/accountSettings.php"><ion-icon name="person-outline"></ion-icon></a>
                 <span class="text">Account</span>
             </div>  
         </div>
@@ -79,7 +79,7 @@
                 <label for="second" id="second-quiz">
                     <div>
                         <p>Quiz 2</p>
-                        <p>Deepen your knowledge about the province</p>
+                        <p>Enhance your knowledge about the province</p>
                     </div>
                     <span class="arrow">&#x3e</span>
                 </label>
