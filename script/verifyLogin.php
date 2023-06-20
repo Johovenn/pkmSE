@@ -20,7 +20,7 @@
                 if(strcmp($password, $row["password"]) == 0){
                     $_SESSION["loginStatus"] = true;
                     $_SESSION["username"] = $username;
-                    header("Location: app/selection/selectionPage.php");
+                    header("Location: app/selection/selectionPage.html");
                 }
                 else{
                     $errorMessage = "Invalid username or password!";
