@@ -26,7 +26,7 @@
             </div>
 
             <div class="nav-logo">
-                <a href=""><i class="fa-solid fa-book"></i></a>
+                <a href="../learn/learnPage.php"><i class="fa-solid fa-book"></i></a>
                 <span class="text">Learn</span>
             </div>
 

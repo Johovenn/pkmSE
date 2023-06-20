@@ -18,7 +18,6 @@
 <body>
     <img id="bg-1" src="../images/background1.png" alt="">
     <img id="bg-2" src="../images/background2 copy.png" alt="">
-    <!-- <img src="../images/deer.png" id="deer" alt=""> -->
 
     <div id="navbar">
         <div id="logo">

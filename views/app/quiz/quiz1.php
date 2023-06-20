@@ -10,47 +10,41 @@
     <link rel="stylesheet" href="../../../style/quiz1.css">
 </head>
 <body>
-    <a class="back-home" href="quizPage.php"><ion-icon name="arrow-back-circle-outline"></ion-icon> Back to Home</a>
-    <div class="question-container">
-        <div class="question var1" id="question1">
-            <div>
-                <img src="../../../images/borobudur.png" alt="">
-            </div>
-            <div class="answer-container">
-                <p>What is the name of this building?</p>
-                <div class="answer">
-                    <button class="choice">Answer 1</button>
-                    <button class="choice">Answer 2</button>
-                    <button class="choice">Answer 3</button>
-                </div>
-            </div>
-        </div>
-        <div class="question var2" id="question2">
-            <div class="image">
-                <img src="../../../images/monas.png" alt="">
-            </div>
-            <div class="answer-container">
-                <p>What is the name of this building?</p>
-                <div class="answer">
-                    <input type="text">
-                </div>
+<a class="back-home" href="quizPage.php"><ion-icon name="arrow-back-circle-outline"></ion-icon> Back to Home</a>
+    
+    <progress id="progress-bar" value="0" max="4"></progress>
+
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
             </div>
         </div>
-        <div class="question var3" id="question3">
-            <div>
-                <img src="../../../images/menara.png" alt="">
+        <div class="result hide" id="result">
+            <div class="quiz-finish-image">
+                <img src="../../../images/quiz-finish.jpg" alt="">
             </div>
-            <div class="answer-choice">
-                <button class="choice">Answer 1</button>
-                <button class="choice">Answer 2</button>
-                <button class="choice">Answer 3</button>
+            <div class="message" id="score">Score : 100</div>
+            <div class="message" id="message">
+                Well done! You got 10 out of 10 questions right!
             </div>
         </div>
-        <button class="submit-button" id="submit1">Submit</button>
+        <div class="ready" id="ready">Are you ready?</div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+            <button id="continue-btn" class="continue-btn btn hide">Continue</button>
+        </div>
     </div>
 
-    <script src="../../../script/quiz1.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <audio src="../../../audio/correct.mp3" id="correct-sound"></audio>
+    <audio src="../../../audio/wrong.mp3" id="wrong-sound"></audio>
 </body>
 </html>

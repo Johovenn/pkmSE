@@ -21,19 +21,16 @@
 
         <div class="navigation">
             <div class="nav-logo">
-                <!-- <a href="quizPage.php"><i class="fa-solid fa-person-chalkboard"></i></a> -->
-                <a href="quizPage.php"><ion-icon name="barbell-outline"></ion-icon></a>
+                <a href=""><ion-icon name="barbell-outline"></ion-icon></a>
                 <span class="text">Train</span>
             </div>
 
             <div class="nav-logo">
-                <!-- <a href=""><i class="fa-solid fa-book"></i></a> -->
-                <a href="quizPage.php"><ion-icon name="book-outline"></ion-icon></a>
+                <a href="../learn/learnPage.php"><ion-icon name="book-outline"></ion-icon></a>
                 <span class="text">Learn</span>
             </div>
 
             <div class="nav-logo">
-                <!-- <a href="../account/changeUsername.php"><i class="fa-solid fa-user"></i></a> -->
                 <a href="../account/changeUsername.php"><ion-icon name="person-outline"></ion-icon></a>
                 <span class="text">Account</span>
             </div>  
@@ -53,7 +50,7 @@
                     <div class="province-name">Provinsi Bali</div>
                 </div>
                 <hr>
-                <div class="add-new-province"><a href="">Switch province</a></div>
+                <div class="add-new-province"><a href="../selection/selectionPage.html">Switch province</a></div>
             </div>
         </div>
     </nav>
@@ -113,7 +110,7 @@
                     </div>
                     <div class="content-right">
                         <a href="#">Start Quiz</a>
-                    </div>                
+                    </div>            
                 </div>
             </li>
         </ul>
