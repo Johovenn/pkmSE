@@ -21,6 +21,11 @@
 
         <div class="navigation">
             <div class="nav-logo">
+                <a href="../homePage.php"><ion-icon name="home-outline"></ion-icon></a>
+                <span class="text">Home</span>
+            </div>
+
+            <div class="nav-logo">
                 <a href=""><ion-icon name="barbell-outline"></ion-icon></a>
                 <span class="text">Train</span>
             </div>
