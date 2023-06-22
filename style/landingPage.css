@@ -134,11 +134,11 @@ section{
 }
 
 #about-us-title{
-    font-size: 56px;
+    font-size: 34px;
     margin-top: 40px;
     margin-bottom: 20px;
-    font-weight: bold;
-    font-family: 'Lobster', cursive;
+    font-weight: 700px;
+    font-family: 'Rubik', sans-serif;
 }
 
 #container{
@@ -222,6 +222,7 @@ section{
     line-height: 1.5;
     color: white;
     font-family: 'Kanit', sans-serif;
+    text-align: justify;
 }
 
 .image img{

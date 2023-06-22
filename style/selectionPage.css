@@ -2,90 +2,80 @@
 body{
     background: linear-gradient(#ffffff, #05BFDB);
     font-family: 'Rubik',sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
 }
 
-.card img{
-    height: 200px;
-    width: 300px;
+#logo{
+    position:  absolute;
+    top: 0px;
+    left: 0px;
+    width: 75px;
 }
 
-.card-row{
-    width: 100vw;
-    margin: 0 10px;
-    justify-content: space-evenly;
+.page-title{
+    font-size: 32px;
+    margin-top: 25px;
+    font-weight: 500;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
-}
-
-.card-column{
-    width: 20%;
-    float: left;
-    padding: 0 16px;
+.page-note{
     margin-bottom: 50px;
-    margin-left: 30px;
-    margin-right: 20px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
 .card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 3px solid black;
-    border-radius: 20px;
     background-color: white;
-    padding: 16px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
-    transition: 0.8s;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 5px rgb(174, 174, 174);
 }
 
-.card:hover{
-    background-color: transparent;
-    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.8);
-    transform: scale(1.05);
+.province-img{
+    width: 200px;
+    height: 130px;
+    border-radius: 15px;
 }
 
-@media screen and (max-width: 600px) {
-    .card-column{
-        width: 100%;
-        display: block;
-        margin-bottom: 25px;
-    }
-}
-
-h3{
-    text-align: center;
-    width: 100vw;
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 100px;
-    font-family: 'Poppins';
-}
-
-h2{
-    text-align: center;
-    font-family: 'Poppins';
-}
-
-h2.decrease{
-    font-size: 22px;
-    padding: 2.5px;
-}
-
-h2.decreased{
+.province-name{
     font-size: 20px;
-    padding: 6px;
+    font-weight: 400;
+    margin: 10px 0 5px 0;
 }
 
-h2.ntb{
-    font-size: 19px;
-    padding: 6px;
+.progress{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-h2.ntt{
-    font-size: 18.9px;
-    padding: 6px;
+progress{
+    margin-right: 5px;
 }
 
+.enroll-btn{
+    background-color: #FFB039;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    transition: 0.3s;
+}
+
+.enroll-btn:hover{
+    background-color: #fea622;
+    transform: scale(1.05);
+    transition: 0.3s;
+}

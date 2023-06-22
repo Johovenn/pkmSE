@@ -1,6 +1,8 @@
 <?php
     session_start();
 
+    $_SESSION["registerStatus"] = 
+
     $errorMessage = "";
     $_SESSION["username"] = "";
     $_SESSION["loginStatus"] = false;

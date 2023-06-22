@@ -56,7 +56,7 @@ body{
 
 #form-box{
     background-color: transparent;
-    width: 400px;
+    width: 500px;
     border: none;
     border-radius: 20px;
     border: 3px solid #093b4b;
@@ -94,7 +94,7 @@ body{
     padding: 15px;
     border: none;
     border-radius: 20px;
-    width: 200px;
+    width: 180px;
     outline: black;
     color: rgb(42, 42, 42);
     font-family: Poppins, sans-serif;
@@ -172,4 +172,18 @@ body{
 #deer{
     bottom: 0px;
     z-index: -1;
+}
+
+.name-field{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.name-input{
+    width: 100px;
+}
+
+#firstname{
+    margin-right: 10px;
 }

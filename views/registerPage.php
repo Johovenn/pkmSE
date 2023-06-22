@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IndoCano | Register</title>
+    <title>IndoCano</title>
     <link rel="stylesheet" href="../style/registerPage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,28 +29,35 @@
         </div>
     </div>
     <div id="content">
-        <span class="title">Create your account here!</span>
         <div id="form-box">
             <form action="registerPage.php" method="post">
                 <span class="title">Sign Up</span>
                 <div class="input-field">
-                    <label for="username">Username</label>
-                    <input type="text" placeholder="Enter your username" name="username">
+                    <input type="text" placeholder="First Name" name="first-name">
                     <span class="validation-message"><?php if(!empty($usernameError)) echo $usernameError; $usernameError = "";?></span>
                 </div>
                 <div class="input-field">
-                    <label for="email">Email</label>
-                    <input type="text" placeholder="Enter your email" name="email">
+                    <input type="text" placeholder="Last Name" name="last-name">
+                    <span class="validation-message"><?php if(!empty($usernameError)) echo $usernameError; $usernameError = "";?></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Username" name="username">
+                    <span class="validation-message"><?php if(!empty($usernameError)) echo $usernameError; $usernameError = "";?></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email" name="email">
                     <span class="validation-message"><?php if(!empty($emailError)) echo $emailError; $emailError = "";?></span>
                 </div>
                 <div class="input-field">
-                    <label for="password">Password</label>
-                    <input type="password" placeholder="Enter your password" name="password">
+                    <input type="date" placeholder="Date of Birth" name="dob" value="" min="1980-01-01" max="2019-01-01">
+                    <span class="validation-message"><?php if(!empty($emailError)) echo $emailError; $emailError = "";?></span>
+                </div>
+                <div class="input-field">
+                    <input type="password" placeholder="Password" name="password">
                     <span class="validation-message"><?php if(!empty($passwordError)) echo $passwordError; $passwordError = "";?></span>
                 </div>
                 <div class="input-field">
-                    <label for="confirm">Confirm Password</label>
-                    <input type="password" placeholder="Confirm your password" name="confirm">
+                    <input type="password" placeholder="Confirm Password" name="confirm">
                     <span class="validation-message"><?php if(!empty($confirmError)) echo $confirmError; $confirmError = "";?></span>
                 </div>
                 <span class="validation-message"><?php if(!empty($errorMessage)) echo $errorMessage; $errorMessage = "";?></span>
