@@ -1,6 +1,6 @@
-<?php 
+<?php
+    session_start();
     include("../../../script/dbconnection.php");
-    include("../../../script/resetPassword.php");
 ?>
 
 <!DOCTYPE html>
@@ -10,8 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account</title>
-    <link rel="stylesheet" href="../../../style/changePassword.css">
-    <script src="https://kit.fontawesome.com/804c059b40.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../style/editProfile.css">
     <link rel="icon" href="../../../images/logo indocano 2.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +18,7 @@
     <script defer src="../../../script/logout-button.js"></script>
 </head>
 <body>
-<nav>
+    <nav>
         <div class="greetings">
             <img src="../../../images/logo indocano 2.png" alt="">
         </div>
@@ -55,7 +54,7 @@
                 <hr>
                 <div class="enrolled-province">
                     <div class="province-image">
-                        <img src="../../images/Provinsi Bali.png" alt="">
+                        <img src="../../../images/Provinsi Bali.png" alt="">
                     </div>
                     <div class="province-name">Provinsi Bali</div>
                 </div>
@@ -71,7 +70,7 @@
                     <li class="hover-effect"><a href="editProfile.php">Edit Profile</a></li>
                     <li class="hover-effect"><a href="changePassword.php">Change Password</a></li>
                     <li class="hover-effect"><a href="termsofservice.php">Terms Of Service</a></li>
-                    <li><a href="privacypolicy.php">Privacy Policy</a></li>
+                    <li class="hover-effect"><a href="privacypolicy.php">Privacy Policy</a></li>
                 </ul>
                 <button href="../../landingPage.html" id="logout-btn" class="log-out-button hover-effect">Log Out</button>
                 <dialog id="logout-popup" data-modal>
@@ -83,28 +82,46 @@
                 </dialog>
             </div>
             <div class="content">
-                <div class="title">Change Password</div>
-
-                <form action="changePassword.php" method="post">
-                    <div class="input-group">
-                        <label for="current">Current Password</label>
-                        <input type="password" name="current">
-                    </div>
-                    <div class="input-group">
-                        <label for="new">New Password</label>
-                        <input type="password" name="new">
-                    </div>
-                    <div class="input-group">
-                        <label for="confirm">Confirm Password</label>
-                        <input type="password" name="confirm">
-                    </div>
-
-                    <input type="submit">
-                </form>
+                <div class="title">
+                    <img src="../../../images/profile-pic.png" alt="">
+                    <span class="username">Username</span>
+                </div>
+                <div class="form-container">
+                    <form action="editProfile.php" method = "post">
+                        <div class="input-field">
+                            <div class="first-name">
+                                <label for="first-name-input">First Name</label>
+                                <input type="text" name="first-name" id="first-name-input">
+                            </div>
+                            <div class="last-name">
+                                <label for="last-name-input">Last Name</label>
+                                <input type="text" name="last-name" id="last-name-input">
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <label for="username-input">Username</label>
+                            <input type="text" name="username" id="username-input">
+                        </div>
+                        <div class="input-field">
+                            <label for="email-input">Email</label>
+                            <input type="email" name="email" id="email-input">
+                        </div>
+                        <div class="input-field">
+                            <label for="dob-input">Date of Birth</label>
+                            <input type="text" name="dob" id="dob-input">
+                        </div>
+                        <input type="submit">
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 
+    <script src ="../../../script/editProfile.js"></script>
+
+    <?php 
+        include("../../../script/editProfileScript.php");
+    ?>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

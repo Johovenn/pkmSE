@@ -1,10 +1,11 @@
 <?php
     session_start();
 
-    $_SESSION["registerStatus"] = 
+    $_SESSION["registerStatus"] = "";
 
     $errorMessage = "";
     $_SESSION["username"] = "";
+    $_SESSION["userid"] = "";
     $_SESSION["loginStatus"] = false;
 
 
@@ -22,7 +23,8 @@
                 if(strcmp($password, $row["password"]) == 0){
                     $_SESSION["loginStatus"] = true;
                     $_SESSION["username"] = $username;
-                    header("Location: app/selection/selectionPage.html");
+                    $_SESSION["userid"] = $row["userid"];
+                    header("Location: app/selection/selectionPage.php");
                 }
                 else{
                     $errorMessage = "Invalid username or password!";

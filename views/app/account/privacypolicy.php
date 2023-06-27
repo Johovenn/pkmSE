@@ -1,8 +1,3 @@
-<?php 
-    include("../../../script/dbconnection.php");
-    include("../../../script/resetPassword.php");
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account</title>
-    <link rel="stylesheet" href="../../../style/changePassword.css">
+    <link rel="stylesheet" href="../../../style/privacypolicy.css">
     <script src="https://kit.fontawesome.com/804c059b40.js" crossorigin="anonymous"></script>
     <link rel="icon" href="../../../images/logo indocano 2.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -83,24 +78,7 @@
                 </dialog>
             </div>
             <div class="content">
-                <div class="title">Change Password</div>
-
-                <form action="changePassword.php" method="post">
-                    <div class="input-group">
-                        <label for="current">Current Password</label>
-                        <input type="password" name="current">
-                    </div>
-                    <div class="input-group">
-                        <label for="new">New Password</label>
-                        <input type="password" name="new">
-                    </div>
-                    <div class="input-group">
-                        <label for="confirm">Confirm Password</label>
-                        <input type="password" name="confirm">
-                    </div>
-
-                    <input type="submit">
-                </form>
+                <div class="title">Privacy Policy</div>
             </div>
         </div>
     </div>

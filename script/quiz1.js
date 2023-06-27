@@ -13,6 +13,9 @@ const ready = document.getElementById('ready')
 const minimumScore = 60
 const progressBar = document.getElementById("progress-bar")
 
+wrongSound.volume = 0.2
+correctSound.volume = 0.2
+
 let shuffledQuestions, currentQuestionIndex
 let clicked = false
 let correctCount = 0
@@ -94,8 +97,6 @@ function selectAnswer(e){
         nextButton.classList.remove("hide")
     }
     else{
-        // startButton.innerText = 'Restart'
-        // startButton.classList.remove("hide")
         questionContainerElement.classList.add("hide")
         showResult()
     }
@@ -131,6 +132,10 @@ function showResult(){
     }
     else{
         resultMessage.innerText = `Well done! You got ${correctCount} out of ${shuffledQuestions.length} questions correct.`
+        
+        let xhr = new XMLHttpRequest()
+        xhr.open("POST", "../../../script/updatequiz1.php", false)
+        xhr.send()
     }
 }
 

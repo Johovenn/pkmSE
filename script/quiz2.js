@@ -10,8 +10,11 @@ const resultScore = document.getElementById("score")
 const resultMessage = document.getElementById("message")
 const continueButton = document.getElementById("continue-btn")
 const ready = document.getElementById('ready')
-const minimumScore = 60
+const minimumScore = 70
 const progressBar = document.getElementById("progress-bar")
+
+wrongSound.volume = 0.2
+correctSound.volume = 0.2
 
 let shuffledQuestions, currentQuestionIndex
 let clicked = false
@@ -94,8 +97,6 @@ function selectAnswer(e){
         nextButton.classList.remove("hide")
     }
     else{
-        // startButton.innerText = 'Restart'
-        // startButton.classList.remove("hide")
         questionContainerElement.classList.add("hide")
         showResult()
     }
@@ -131,6 +132,10 @@ function showResult(){
     }
     else{
         resultMessage.innerText = `Well done! You got ${correctCount} out of ${shuffledQuestions.length} questions correct.`
+
+        let xhr = new XMLHttpRequest()
+        xhr.open("POST", "../../../script/updatequiz2.php", false)
+        xhr.send()
     }
 }
 
@@ -171,4 +176,58 @@ const questions=[
             {text: 'Upacara Saraswati', correct: false}
         ]
     },
+    {
+        question: "Salah satu pantai terkenal di Bali yang terkenal dengan pasir putihnya adalah",
+        answers: [
+            {text: 'Pantai Kuta', correct: true},
+            {text: 'Pantai Sanur', correct: false},
+            {text: 'Pantai Nusa Dua', correct: false},
+            {text: 'Pantai Jimbaran', correct: false}
+        ]
+    },
+    {
+        question: "Apa julukan lain yang diberikan kepada Gunung Agung, gunung tertinggi di Bali",
+        answers: [
+            {text: 'Gunung Batur', correct: false},
+            {text: 'Gunung Rinjani', correct: true},
+            {text: 'Gunung Merapi', correct: false},
+            {text: 'Gunung Abang', correct: false}
+        ]
+    },
+    {
+        question: "Tari legendaris Bali yang menggambarkan pertempuran antara kebaikan dan kejahatan adalah",
+        answers: [
+            {text: 'Tari Barong', correct: true},
+            {text: 'Tari Legong', correct: false},
+            {text: 'Tari Kecak', correct: false},
+            {text: 'Tari Pendet', correct: false}
+        ]
+    },
+    {
+        question: "Apa nama festival musik yang diadakan setiap tahun di Ubud, Bali?",
+        answers: [
+            {text: 'Desa Tenganan', correct: true},
+            {text: 'Desa Penglipuran', correct: false},
+            {text: 'Desa Batubulan', correct: false},
+            {text: 'Desa Sukawati', correct: false}
+        ]
+    },
+    {
+        question: "Apa nama salah satu air terjun terkenal di Bali yang terletak di daerah Buleleng?",
+        answers: [
+            {text: 'Air Terjun Gitgit', correct: false},
+            {text: 'Air Terjun Sekumpul', correct: true},
+            {text: 'Air Terjun Tegenungan', correct: false},
+            {text: 'Air Terjun Nungnung', correct: false}
+        ]
+    },
+    {
+        question: "Apa nama gunung yang terkenal di Bali dan menjadi tempat trekking populer?",
+        answers: [
+            {text: 'Gunung Batur', correct: true},
+            {text: 'Gunung Merapi', correct: false},
+            {text: 'Gunung Abang', correct: false},
+            {text: 'Gunung Batukaru', correct: false}
+        ]
+    }
 ]

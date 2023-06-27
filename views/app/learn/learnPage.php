@@ -36,7 +36,7 @@
             </div>
 
             <div class="nav-logo">
-                <a href="../account/changeUsername.php"><ion-icon name="person-outline"></ion-icon></a>
+                <a href="../account/editProfile.php"><ion-icon name="person-outline"></ion-icon></a>
                 <span class="text">Account</span>
             </div>  
         </div>
@@ -55,14 +55,27 @@
                     <div class="province-name">Provinsi Bali</div>
                 </div>
                 <hr>
-                <div class="add-new-province"><a href="">Switch province</a></div>
+                <div class="add-new-province"><a href="../selection/selectionPage.php">Switch province</a></div>
             </div>
         </div>
     </nav>
     
-    <div class="judul">
+    <h1>Provinsi Bali</h1>
+
+    <div class="logoProv">
         <img src="../../../images/LogoBali.png" alt="">
-        <h1>Provinsi Bali</h1>
+        <div class="general">
+            <p>
+                <b>Pulau:</b><span id="span1">Diantara Pulau Jawa dan Pulau Lombok</span><br>
+                <b>Guberner:</b><span id="span2">Dr. Ir. I Wayan Koster, M.M.</span><br>
+                <b>Julukan:</b><span id="span3">Pulau Dewata, Pulau Seribu Pura</span><br>
+                <b>Ibu Kota:</b><span id="span4">Denpasar</span><br>
+                <b>Agama Mayoritas:</b><span id="span5">Hindu</span><br>
+                <b>Zona Waktu:</b><span id="span6">Waktu Indonesia bagian Tengah (WITA)</span> <br>
+                <b>Titik Tertinggi:</b><span id="span7">Gunung Agung</span>
+            </p>
+            
+        </div>
     </div>
 
     <div class="accordion">
@@ -71,64 +84,154 @@
           <input type="checkbox" name="example_accordion" id="section1" class="accordion__input">
           <label for="section1" class="accordion__label">Section #1: Makanan Khas</label>
           <div class="accordion__content">
-                <div class="container-makanan">
-                     <div class="content-slide">
-                        <div class="imgslide fade">
-                             <div class="numberslide">1 / 7</div>
-                             <img src="../../../images/AyamBetutu.jpg" class="GM" alt="">
-                             <div class="text">Ayam Betutu</div>
-                        </div>
+                <div class="guide">
+                    <div class="current-province">
+                        <ion-icon name="information-circle-outline" class="ikon"></ion-icon>
+                    </div>
+                    <div class="dropdown-container" id="guide2">
+                        <p>Try clicking the cylinder under !</p>
+                    </div>
+                </div>
 
-                        <div class="imgslide fade">
-                            <div class="numberslide">2 / 7</div>
-                            <img src="../../../images/BulungBuni.jpeg" class="GM" alt="">
-                            <div class="text">Bulung Buni Kuah Pindang</div>
-                        </div>
-                         
-                        <div class="imgslide fade">
-                             <div class="numberslide">3 / 7</div>
-                             <img src="../../../images/NasiCampurBali.jpg" class="GM" alt="">
-                             <div class="text">Nasi Campur Bali</div>
-                        </div>
- 
-                        <div class="imgslide fade">
-                             <div class="numberslide">4 / 7</div>
-                             <img src="../../../images/NasiJinggo.jpeg" class="GM" alt="">
-                             <div class="text">Nasi Jinggo</div>
-                        </div>
+                <div class="content-makanan">
+                    <div class="container-makanan">
+                            <div class="content-slide">
+                                <input type="radio" name="select" id="slide1" checked>
+                                <input type="radio" name="select" id="slide2">
+                                <input type="radio" name="select" id="slide3">
+                                <input type="radio" name="select" id="slide4">
+                                <input type="radio" name="select" id="slide5">
+                                <input type="radio" name="select" id="slide6">
+                                <input type="radio" name="select" id="slide7">
+                                <input type="checkbox" id="slideImg">
+            
+                                <div class="slider-makanan">
+                                    <label for="slide1" class="slide slide1"></label>
+                                    <label for="slide2" class="slide slide2"></label>
+                                    <label for="slide3" class="slide slide3"></label>
+                                    <label for="slide4" class="slide slide4"></label>
+                                    <label for="slide5" class="slide slide5"></label>
+                                    <label for="slide6" class="slide slide6"></label>
+                                    <label for="slide7" class="slide slide7"></label>
+                                </div>
+            
+                                <div class="inner">
+                                    <label for="slideImg" class="gmbr">
+                                        <img class="img1" src="../../../images/AyamBetutu.jpg">
+                                    </label>
+                                    <div class="konten konten1">
+                                        <div class="jdul">Ayam Betutu</div>
+                                        <div class="isip">
+                                            Ayam Betutu merupakan masakan nusantara khas bali yang awalnya berasal dari wilayah Gianyar, Ubud 
+                                            kemudian meluas ke berbagai kota bahkan terkenal sampai ke mancanegara. <br>
+                                            Bebek atau ayam dibalur dengan bumbu <b><i>base genep</i></b> yang terbuat dari 15 jenis rempah 
+                                            khas indonesia sehingga menghasilkan cita rasa yang kaya akan rempah yang kuat dan tajam. Daging 
+                                            kemudian dibungkus dengan daun pinang atau daun pisang kemudian dibakar. Cara pembakaran tradisional 
+                                            adalah dengan cara dikubur selama delapan sampai sepuluh jam didalam tanah dengan bara.
+                                        </div>
+                                        <a href="https://id.theasianparent.com/ayam-betutu"><button>Read More</button></a>
+                                    </div>
+                                </div>
+            
+                                <div class="inner">
+                                    <label for="slideImg" class="gmbr">
+                                        <img class="img2" src="../../../images/BulungBuni.jpeg">
+                                    </label>
+                                    <div class="konten konten2">
+                                        <div class="jdul">Bulung Buni Kuah Pindang</div>
+                                        <div class="isip">
+                                            Bulung buni kuah pindang merupakan kuliner khas yang berasal dari Kabupaten Jembrana dan sering ditemukan didaerah pesisir pantai. 
+                                            Bulung buni kuah pindang memiliki banyak manfaat untuk kesehatan, beberapa diantaranya seperti mencegah
+                                            kanker, darah tinggi, dan ostoeporosis.<br>
+                                            Rumput laut hijau yang dihidangkan dengan dibaluri bumbu kelapa parut, kuah pindang, lengkuas, cabai merah, terasi bakar, dan perasan jeruk limau. 
+                                            Cita rasa dari bulung buni kuah pindang ini merupakan perpaduan rasa pedas dari bumbu, rasa gurih dari kuah pindang, dan rasa asin dari bulung 
+                                            buni yang memiliki tekstur seperti daun tapi memiliki kantong yang berisi cairan. <br>
+                                            
+                                        </div>
+                                        <a href="https://budaya-indonesia.org/Rujak-Bulung"><button>Read More</button></a>
+                                    </div>
+                                </div>
+            
+                                <div class="inner">
+                                    <label for="slideImg" class="gmbr">
+                                        <img class="img3" src="../../../images/NasiCampurBali.jpg">
+                                    </label>
+                                    <div class="konten konten3">
+                                        <div class="jdul">Nasi Campur Bali</div>
+                                        <div class="isip">
+                                            Nasi Campur Bali merupakan campuran nasi dengan berbagai macam lauk pauk dengan cita rasa yang gurih 
+                                            seperti ayam yang dipanggang dengan bumbu bali, telur, beberapa jenis campuran sayuran, dan juga sate lilit. <br>
+                                            Beberapa daerah yang cukup populer untuk mencicipi nasi campur bali antara lain di daerah Teuku Umar, Seminyak, dan Kuta.
+                                        </div>
+                                        <a href="https://www.nibble.id/nasi-campur-terenak-di-bali/"><button>Read More</button></a>
+                                    </div>
+                                </div>
 
-                        <div class="imgslide fade">
-                            <div class="numberslide">5 / 7</div>
-                            <img src="../../../images/NasiTepeng.jpg" class="GM" alt="">
-                            <div class="text">Nasi Tepeng</div>
-                        </div>
+                                <div class="inner">
+                                    <label for="slideImg" class="gmbr">
+                                        <img class="img4" src="../../../images/NasiJinggo.jpeg">
+                                    </label>
+                                    <div class="konten konten4">
+                                        <div class="jdul">Nasi Jinggo</div>
+                                        <div class="isip">
+                                           Nasi Jinggo atau Nasi Jenggo adalah sejenis Nasi Kucing khas bali. Penjual nasi jinggo sangat mudah ditemui diseluruh wilayah di Bali.<br>
+                                           Nasi Jinggo merupakan makanan siap saji yang dikemas menggunakan daun pisang dengan porsi kecil dengan isian berupa nasi putih sekepalan tangan dengan lauk-pauk dan sambal.
+                                           Nasi Jinggo memiliki beragam pilihan lauk mulai dari ayam, ikan, sapi, telur, hingga daging babi. Lauk-pauk yang ada biasanya adalah sambal goreng tempe, serundeng, mi goreng atau sayuran. 
+                                        </div>
+                                        <a href="https://www.detik.com/bali/kuliner/d-6310820/asal-usul-nasi-jinggo-nasi-kucing-dari-bali-pemadam-kelaparan"><button>Read More</button></a>
+                                    </div>
+                                </div>
 
-                        <div class="imgslide fade">
-                            <div class="numberslide">6 / 7</div>
-                            <img src="../../../images/SatePlecing.jpg" class="GM" alt="">
-                            <div class="text">Sate Plecing</div>
-                        </div>
+                                <div class="inner">
+                                    <label for="slideImg" class="gmbr">
+                                        <img class="img5" src="../../../images/NasiTepeng.jpg">
+                                    </label>
+                                    <div class="konten konten5">
+                                        <div class="jdul">Nasi Tepeng</div>
+                                        <div class="isip">
+                                            Nasi Tepeng adalah sarapan pilihan utama bagi masyarakat bali khususnya yang tinggal di Kabupaten Gianyar. <br>
+                                            Nasi khas Gianyar ini memiliki tekstur agak lembek seperti bubur yang didalamnya terdapat beragam jenis bahan seperti nangka, ayam 
+                                            goreng, kacang panjang, kacang merah, terong, daun kelor, telur dan berbagai rempah khas bali.
+                                            Nasi Tepeng memiliki cita rasa yang gurih dan sedikit pedas karena beras yang digunakan direbus bersama santan yang kemudian dicampur 
+                                            dengan kunyit, daun salam, garam serta lada.
+                                        </div>
+                                        <a href="https://www.kintamani.id/nasi-tepeng-khas-gianyar-kuliner-pagi-hari-yang-murah-meriah-di-bali/"><button>Read More</button></a>
+                                    </div>
+                                </div>
 
-                        <div class="imgslide fade">
-                            <div class="numberslide">7 / 7</div>
-                            <img src="../../../images/TumAyam.jpg" class="GM" alt="">
-                            <div class="text">Tum Ayam</div>
-                        </div>
- 
-                        <a class="prev" onclick="nextslide(-1)">&#10094;</a>
-                        <a class="next" onclick="nextslide(1)">&#10095;</a>
-                     </div>
- 
-                     <div class="page">
-                         <span class="dot" onclick="dotslide(1)"></span>
-                         <span class="dot" onclick="dotslide(2)"></span>
-                         <span class="dot" onclick="dotslide(3)"></span>
-                         <span class="dot" onclick="dotslide(4)"></span>
-                         <span class="dot" onclick="dotslide(5)"></span>
-                         <span class="dot" onclick="dotslide(6)"></span>
-                         <span class="dot" onclick="dotslide(7)"></span>
-                     </div>
- 
+                                <div class="inner">
+                                    <label for="slideImg" class="gmbr">
+                                        <img class="img6" src="../../../images/SatePlecing.jpg">
+                                    </label>
+                                    <div class="konten konten6">
+                                        <div class="jdul">Sate Plecing</div>
+                                        <div class="isip">
+                                            Sate Plecing khas daerah Singaraja, umumnya sama dengan sate yang ada di Indonesia. Berbahan dasar daging ikan laut, ayam, sapi atau daging babi.
+                                            Pembeda dari sate plecing ini adalah bumbunya yang didominasi cabai merah dengan aroma terasi dan limau yang menyengat. Bahan utama dari bumbu plecing
+                                            khas bali adalah  cabai rawit, cabai merah besar, bawang merah, gula pasir, terasi, garam, tomat segar dan tentunya jeruk limau sehingga makanan in memiliki 
+                                            rasa pedas, gurih, dan asam segar dari limau. 
+                                        </div>
+                                        <a href="https://www.singarajapost.com/kuliner/pr-6085230088/resep-sate-plecing-menu-identik-pulau-bali-yang-jadi-favorit-wisatawan"><button>Read More</button></a>
+                                    </div>
+                                </div>
+
+                                <div class="inner">
+                                    <label for="slideImg" class="gmbr">
+                                        <img class="img7" src="../../../images/TumAyam.jpg">
+                                    </label>
+                                    <div class="konten konten7">
+                                        <div class="jdul">Tum Ayam</div>
+                                        <div class="isip">
+                                            Pembuatan Tum Ayam sama seperti pembuatan pepes. Daging ayam dicincang kemudian dibumbui dengan berbagai rempah dan santan,
+                                            lalu dibungkus dengan daun pisang dan dikukus. Tum Ayam memiliki cita rasa yang gurih dari bumbu dan juga santan yang digunakan. Daun 
+                                            pisang yang digunakan sebagai bungkus juga menambah aroma tersendiri
+                                        </div>
+                                        <a href="https://katalogkuliner.com/2015/08/masakan-bali-tum-daging-dan-tum-ayam-khas-bali.html"><button>Read More</button></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </div>
                 </div>
           </div>
         </div>
@@ -138,6 +241,15 @@
           <input type="checkbox" name="example_accordion" id="section2" class="accordion__input">
           <label for="section2" class="accordion__label">Section #2: Pakaian Adat</label>
           <div class="accordion__content">
+                <div class="guide">
+                    <div class="current-province">
+                        <ion-icon name="information-circle-outline" class="ikon"></ion-icon>
+                    </div>
+                    <div class="dropdown-container" id="guide2">
+                        <p>Hover on the cards!</p>
+                    </div>
+                </div>
+
                 <div class="content-pakaian">
                     <div class="container">
                         <div class="card">
@@ -199,8 +311,10 @@
                             </div>
                             <div class="back">
                                 <h4>Kain Saput</h4>
-                                <p>Kebaya Bali bisa dibuat dari berbagai jenis bahan dan dapat ditambahkan renda dan/atau korset. Kebaya Bali identik 
-                                    dengan warna-warna cerah untuk menggambarkan keceriaan sekaligus keanggunan perempuan di Bali.</p>
+                                <p>
+                                    Kain dengan motif kotak-kotak yang biasanya dikenakan dibagian lapisan atas kain kamen dengan cara diikat melingkari bagian pinggang berlawanan arah jarum jam.
+                                    Kain Saput umumnya digunakan untuk upacara keagamaan atau pernikahan.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -212,7 +326,10 @@
                             </div>
                             <div class="back">
                                 <h4>Payas Agung</h4>
-                                <p>Payas Agung</p>
+                                <p>Pakaian tradisional masyrakat bali yang digunakan saat upacara pernikahan atau potong gigi. 
+                                    Pakaian ini dilengkapi dengan berbagai aksesoris emas dan riasan sehingga memiliki kesan mewah dan spesial, 
+                                    maka dari itu payas agung tidak ditujukan untuk berbagai aktivitas.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -224,7 +341,8 @@
                             </div>
                             <div class="back">
                                 <h4>Payas Madya</h4>
-                                <p>Payas Madya</p>
+                                <p>Payas Madya memiliki kesan yang lebih santai dan bisa dikenakan dalam ritual keagamaan dan pesat adat.
+                                   Padas madya tidak dikenakan dengan aksesoris yang terlalu banyak sehingga bisa juga dikenakan untuk aktivitas sehari-hari.</p>
                             </div>
                         </div>
                     </div>
@@ -236,9 +354,15 @@
                             </div>
                             <div class="back">
                                 <h4>Payas Alit</h4>
-                                <p>Payas Alit</p>
+                                <p>Payas Alit merupakan pakaian adat yang jauh lebih sederhana dan digunakan dikenakan untuk aktivitas sehari-hari atau 
+                                    untuk keperluan ibadah ke pura.
+                                </p>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="tombol">
+                        <a href="https://www.gramedia.com/literasi/pakaian-adat-bali/"><button>Read More</button></a>
                     </div>
                 </div>
           </div>
@@ -249,17 +373,27 @@
           <input type="checkbox" name="example_accordion" id="section3" class="accordion__input">
           <label for="section3" class="accordion__label">Section #3: Alat Musik Tradisional</label>
           <div class="accordion__content" id="atmus">
+            <div class="guide">
+                <div class="current-province">
+                    <ion-icon name="information-circle-outline" class="ikon"></ion-icon>
+                </div>
+                <div class="dropdown-container" id="guide2">
+                    <p>Read Only !</p>
+                </div>
+            </div>
+
             <div class="mvv-container">
                 <div class="mv-block">
                     <div class="image">
                         <img src="../../../images/GamelanBali.png" alt="">
                     </div>
                     <div class="kata">
-                        <h5>Gamelan Bali</h5>
+                        <h7>Gamelan Bali</h7>
                         <p class ="kecil" align="justify">Gamelan Bali merupakan alat musik tradisional Bali berupa ansambel yang terdiri dari berbagai macam alat-alat musik lainnya 
                             seperti gong, gambang, kendang, kempul, bonang dan masih banyak lagi yang lainnya.Gamelan Bali biasanya digunakan oleh 
                             masyarakat Bali dalam berbagai acara adat dan juga ritual keagamaan yang ada di Bali. Dimana ada sekitar 25 jenis gamelan yang 
-                            berkembang di berbagai pedesaan, ada yang terbuat dari bambu dan ada yang terbuat dari logam.</p> <br>
+                            berkembang di berbagai pedesaan, ada yang terbuat dari bambu dan ada yang terbuat dari logam.
+                        </p>
                         <p class="kecil">Gamelan terdiri dari beberapa bagian seperti berikut ini: <br>
                             1. Gamelan tua yang terdiri dari gambang, saron, selonding kayu, gong besi, gong luwang, selonding besi, angklung klentang dan 
                             gender wayang. <br>
@@ -275,9 +409,9 @@
                         <img src="../../../images/rindik.jpeg" alt="">
                     </div>
                     <div class="kata">
-                        <h5>Rindik</h5>
+                        <h7>Rindik</h7>
                         <p align="justify">Nama Rindik berasal dari bahasa Jawa kuno yang berarti ditempatkan dengan rapi dan memiliki sedikit celah. 
-                            Instrumen ini dimainkan oleh dua hingga lima orang, dua memainkan Rindik dan sisanya memainkan suling dan gong puru. <br>
+                            Instrumen ini dimainkan oleh dua hingga lima orang, dua memainkan Rindik dan sisanya memainkan suling dan gong puru. <br><br>
                             Rindik merupakan salah satu alat musik Bali yang dipukul dan terbuat dari bambu. Alat musik tradisional ini 
                             memiliki lima nada dasar pada bilah bambunya dan cara memainkannya dengan memukulnya dengan palu khusus. Rindik sering digunakan
                             dalam tradisi joged bumbung. Selain itu, alat ini sering digunakan sebagai pelengkap resepsi pernikahan dan penyambutan tamu. 
@@ -290,7 +424,7 @@
                         <img src="../../../images/Ceng-ceng.jpg" alt="">
                     </div>
                     <div class="kata">
-                        <h5>Ceng - Ceng</h5>
+                        <h7>Ceng - Ceng</h7>
                         <p align = "justify">Salah satu elemen kunci dari gamelan Bali yang membedakannya dari gamelan lainnya adalah alat musik Ceng-ceng. Dalam perangkat 
                             Gamelan Bali, alat musik mirip simbal ini dapat memberikan efek suara yang dinamis saat dimainkan di ansambel Gamelan. Suara 
                             yang dikeluarkan merupakan hasil dari perpaduan delapan buah logam bundar yang diadu satu dengan lainnya. Ceng-ceng terdiri dari
@@ -298,6 +432,11 @@
                             putaran bawah. Alat musik ini disebut juga dengan ceng-ceng ricik.</p>
                     </div>
                 </div>
+
+                <div class="tombol">
+                    <a href="https://www.gramedia.com/best-seller/alat-musik-bali/"><button>Read More</button></a>
+                </div>
+
             </div>
           </div>
             
@@ -308,60 +447,55 @@
             <input type="checkbox" name="example_accordion" id="section4" class="accordion__input">
             <label for="section4" class="accordion__label">Section #4: Rumah Adat</label>
             <div class="accordion__content">
+                <div class="guide">
+                    <div class="current-province">
+                        <ion-icon name="information-circle-outline" class="ikon"></ion-icon>
+                    </div>
+                    <div class="dropdown-container" id="guide2">
+                        <p>Hover on the inner box !</p>
+                    </div>
+                </div>
+
                 <div class="container-rumah">
-                    <div class="card" style="--clr:#009688;">
+                    <div class="card" style="--clr:#0b495e;">
                         <div class="imgBx">
                             <img src="../../../images/balegede.jpg" alt="">
                         </div>
                         <div class="content-rumah">
                             <h2>Bale Gede</h2>
-                            <p>Rumah Bale Gede adalah salah satu jenis arsitektur tradisional Bali yang memiliki ciri khas bangunan dengan struktur atap bertingkat. Bale 
-                                Gede biasanya merupakan rumah adat Bali yang digunakan sebagai tempat tinggal keluarga yang terdiri dari beberapa generasi.Bale Gede 
-                                memiliki ciri khas atap bertingkat yang disebut dengan "meru". Meru merupakan bentuk atap bertingkat yang terdiri dari beberapa lapis dan 
-                                jumlah tiang yang sesuai dengan tingkatan. Tiang-tiang pada meru disebut dengan "saka guru" yang merupakan simbol dari sembilan dewa utama 
-                                agama Hindu.Selain itu, Bale Gede juga memiliki tiga bagian utama, yaitu "jeroan" yang merupakan bagian paling dalam rumah dan digunakan 
-                                sebagai tempat beribadah, "jaba tengah" yang merupakan tempat berkumpul keluarga, dan "jaba sisi" yang merupakan ruang tamu untuk para tamu.
-                                Bale Gede juga memiliki berbagai ornamen dan ukiran yang indah dan rumit. Ornamen dan ukiran tersebut umumnya memiliki motif bunga, daun, dan
-                                binatang seperti burung, naga, dan kura-kura, yang memiliki makna filosofis dalam kepercayaan agama Hindu.Bale Gede dianggap sebagai salah 
-                                satu warisan budaya Bali yang penting dan kaya akan makna filosofis. Bentuk atap yang unik dan ornamen-ornamen yang rumit pada Bale Gede 
-                                menjadi daya tarik bagi wisatawan yang berkunjung ke Bali.
+                            <p> Rumah dengan ruangan berukuran paling besar serta memiliki ciri khas struktur atap bertingkat yang disebut dengan 
+                                <b><i>meru</i></b> dan diperkokoh dengan 12 tiang. Bale Gede merupakan salah satu warisan budaya Bali yang kaya akan 
+                                makna filosofis mulai dari atap, tiang, hingga ornamen yang ada didalamnya. Bale gede dibangun lebih tinggi dari 
+                                rumah adat lainnya karena digunakan sebagai tempat diadakannya beragam upacara adat, membakar sesaji dan berkumpul
+                                untuk menyantap makanan khas bali.
                             </p>
                         </div>            
                     </div>
             
-                    <div class="card" style="--clr:#ff3e7f;">
+                    <div class="card" style="--clr:#0b495e;">
                         <div class="imgBx">
                             <img src="../../../images/pawarengan.jpeg" alt="">
                         </div>
                         <div class="content-rumah">
                             <h2>Rumah Pawarengan</h2>
-                            <p>Rumah Pawarengan adalah jenis arsitektur tradisional Bali yang terbuat dari kayu dan bambu. Rumah ini biasanya digunakan sebagai tempat 
-                                untuk penyimpanan beras dan peralatan pertanian. Pawarengan juga sering dijadikan sebagai tempat berkumpul keluarga dan komunitas saat 
-                                musim panen tiba.Pawarengan memiliki ciri khas atap yang tinggi dan tajam, serta struktur bangunan yang sederhana dan terbuka. Pada bagian 
-                                atap terdapat ventilasi yang berfungsi untuk mengalirkan udara dan sinar matahari agar sirkulasi udara di dalam bangunan tetap lancar dan 
-                                udara tidak lembap.Rumah Pawarengan umumnya dibangun di dataran tinggi Bali yang memiliki iklim yang lebih dingin, sehingga atap tajam 
-                                berguna untuk mencegah turunnya suhu di dalam bangunan. Selain itu, bahan-bahan alami seperti kayu dan bambu juga memastikan ventilasi 
-                                alami dan ramah lingkungan.
+                            <p>Rumah Pawarengan adalah Rumah yang biasanya digunakan sebagai tempat untuk menyimpan dan mengolah makanan atau yang
+                                biasanya disebut dapur. Rumah Pawarengan berukuran sedang dan terletak disebelah barat laut atau selatan dari rumah
+                                utama.Rumah ini memiliki 2 ruangan, untuk memasak dan untuk menyimpan makanan, peralatan masak dan lain sebagainya.
                             </p>
                         </div>            
                     </div>
             
-                    <div class="card" style="--clr:#03a9f4;">
+                    <div class="card" style="--clr:#0b495e;">
                         <div class="imgBx">
                             <img src="../../../images/lumbung.jpg" alt="">
                         </div>
                         <div class="content-rumah">
                             <h2>Rumah Lumbung</h2>
-                            <p>Rumah adat Lumbung adalah jenis rumah adat tradisional masyarakat Bali yang khusus digunakan sebagai tempat penyimpanan padi atau beras. 
-                                Rumah adat Lumbung memiliki bentuk yang unik dan menarik, dengan atap berbentuk seperti kerucut dan bagian bawahnya yang berbentuk persegi 
-                                atau segi empat.Bentuk atap yang khas pada rumah adat Lumbung disebut "kul-kul" atau "sirap". Kul-kul pada atap Lumbung merupakan atap 
-                                dengan bentuk kerucut yang semakin menyempit pada bagian puncaknya. Pada bagian bawah atap terdapat dinding-dinding yang dilengkapi dengan 
-                                bilik-bilik kayu sebagai tempat menyimpan beras atau padi.Rumah adat Lumbung juga dilengkapi dengan tiang-tiang penyangga dan lantai yang 
-                                terbuat dari kayu. Selain itu, rumah adat Lumbung sering dihiasi dengan ukiran dan ornamen-ornamen khas Bali yang indah dan rumit.Fungsi 
-                                utama rumah adat Lumbung adalah sebagai tempat penyimpanan padi atau beras, karena bahan makanan tersebut merupakan bahan makanan pokok 
-                                masyarakat Bali. Namun, rumah adat Lumbung juga sering digunakan sebagai tempat pertemuan dan berbagai acara adat Bali.Rumah adat Lumbung 
-                                merupakan salah satu warisan budaya Bali yang kaya akan makna filosofis dan nilai-nilai tradisional. Bentuk atap yang unik dan ornamen-
-                                ornamen khas Bali pada Lumbung menjadi daya tarik bagi wisatawan yang berkunjung ke Bali.  
+                            <p>Rumah adat dengan atap berbentuk seperti kerucut yang semakin menyempit pada bagian puncaknya atau biasa disebut "kul
+                                -kul" atau "sirap" dan bagian bawahnya yang berbentuk segi empat dengan dinding yang dilengkapi dengan bilik-bilik 
+                                kayu sebagai tempat menyimpan makanan pokok yang tahan lama seperti padi dan jagung. Rumah adat Lumbung juga 
+                                dilengkapi dengan tiang-tiang penyangga dan lantai yang terbuat dari kayu. Selain itu, rumah adat Lumbung sering 
+                                dihiasi dengan ukiran dan ornamen-ornamen khas Bali yang indah.
                             </p>
                         </div>            
                     </div>
@@ -375,78 +509,78 @@
             <input type="checkbox" name="example_accordion" id="section5" class="accordion__input">
             <label for="section5" class="accordion__label">Section #5: Upacara Adat</label>
             <div class="accordion__content">
-                <div class="slider-container">
-                    <div class="left">
-                        <div style="background-color: #f5f5f5;">
-                            <h2>Upacara Ngaben</h2>
-                            <p>Upacara ngaben adalah upacara yang sangat penting dan sakral bagi orang Bali dan harus dilakukan walaupun waktunya agak lama.
-                                Maksudnya adalah pelaksanaan upacara ngaben boleh dilakukan beberapa tahun kemudian atau setelah keluarga mempunyai dana yang 
-                                cukup. Upacara ngaben memerlukan biaya yang cukup besar sekarang berkisar di atas 10 juta. Biaya tersebut digunakan untuk 
-                                membuat sesajen dan perlengkapan lainnya. Upacara ngaben dianggap sebagai simbol pengantar atma/jiwa ke alam pitra atau alam 
-                                baka dan ini merupakan prinsip pertama dalam antologi upacara ngaben.Upacara ngaben merupakan rangkaian kegiatan yang 
-                                berlangsung beberapa hari lamanya mulai dari penyelenggaraan jenazah sampai membuang abu ke laut besar. Setiap rangkaian 
-                                kegiatan disertai sesajian yang disiapkan oleh anggota keluarga. Sesajen dibuat secara bersamasama menjelang hari pelaksanaan 
-                                ngaben. Upacara ngaben dilaksanakan karena adanya anggapan bahwa roh tidak sampai ketempat asalnya yakni surga. Dunia gaib 
-                                mendorong manusia untuk melakukan berbagai perbuatan, bertujuan mencari keselarasan hubungan, yang disebut kelakuan keagamaan 
-                                atau religiousbehavior. Kelakuan keagamaan yang dilaksanakan menurut tatakelakuan yang baku disebut upacara keagamaan atau 
-                                religious ceremonies atau rites. Tiap upacara keagamaan dapat terbagi kedalam empat komponen ialah: <br>
-                                1. Tempat upacara, <br>
-                                2 saat upacara, <br>
-                                3 benda-benda dan alat upacara dan <br>
-                                4, orang-orang yang melakukan dan memimpin upacara (Koentjaraningrat, 1974:253). <br>
-                                Upacara ngaben dipimpin oleh pendeta, dalam hal ini pendeta berperan penting pada pelakaksanaan ngaben. Melalui pendeta arwah 
-                                leluhur bisa kembali ketempat asal dan keluarga yang ditinggalkan bisa tenang ini juga sebagai wujud rasa hormat anggota 
-                                keluarga terhadap orang tuanya. Setelah itu barulah anggota keluarga dapat beraktivitas kembali seperti biasa.
-                            </p>
-                        </div>
-            
-                        <div style="background-color: #f5f5f5;">
-                            <h2>Upacara Melasti</h2>
-                            <p>Upacara melasti atau melis merupakan salah satu upacara yang dilaksanakan ditepi laut ataupun danau. Upacara ini bertujuan untuk
-                                <i>nganyudang malaning gumi ngamet tirta amerta</i> yang berarti menghanyutkan kotoran alam dengan menggunakan air kehidupan. 
-                                Dalam pandangan Hindu, laut diyakini sebagai salah satu tempat yang memiliki energi positif dari alam dan dapat dimanfaatkan 
-                                bagi kesejahteraan makhluk hidup (Wiana, 2014:37). <br>
-                                Upacara melasti di Bali lebih populer sebagai salah satu rangkaian dari hari suci Nyepi, yang sering dilaksanakan setahun sekali
-                                berdasarkan perhitungan kalender Caka. Diluar rangkaian hari suci Nyepi upacara melasti juga sering dilaksanakan oleh umat Hindu.
-                                Misalnya sebagai rangkaian dari karya agung pada suatu pura. Namun saat rangkaian hari suci Nyepi, upacara melasti serentak 
-                                dilaksanakan oleh Desa Adat yang ada di Bali. Kesemarakan dari upacara melasti memiliki makna tersendiri bagi umat Hindu. 
-                                Terdapat kerinduan dalam diri untuk melaksanakan upacara melasti tersebut, sehingga ketika upacara melasti dilaksanakan umat
-                                Hindu mengikuti prosesinya dengan penuh antusias. Hal ini merupakan bentuk kongkrit dari kecintaan umat Hindu terhadap tradisi 
-                                keagamaan yang dimilikinya. Antusisme semacam ini harus selalu dipupuk dan diarahkan secara tepat agar pelaksanaan upacara
-                                keagamaan mendatangkan maanfaat bagi alam semesta
-                            </p>
-                        </div>
-            
-                        <div style="background-color: #f5f5f5;">
-                            <h2>Upacara Tumpek Landep</h2>
-                            <p>Ritual Tumpek Landep merupakan hari peringatan turunnya kekuatan Sang Hyang Widhi ke dunia, yang dikhususkan untuk memohon 
-                                keselamatan kepada Tuhan yang Maha Esa dalam manifestasinya sebagai Dewa Senjata atau dengan kata lain ritual Tumpek Landep 
-                                merupakan bentuk rasa syukur umat Hindu terhadap Sang Hyang Widhi yang telah memberikan ketajaman pemikiran kepada manusia, 
-                                adapun ketajaman itu disimbolkan layaknya senjata yang berbentuk lancip/runcing seperti keris, tombak dan pedang (Sudarsana, 2003 : 15).
-                                <br>
-                                Pesatnya perkembangan ilmu pengetahuan dan teknologi di tengah-tengah masyarakat menjadi faktor pendorong perubahan atas cara 
-                                pandangan masyarakat suku Bali di Desa Puudongi, Kecamatan Polinggona, Kabupaten Kolaka terhadap ritual Tumpek Landep. Dahulu 
-                                ritual Tumpek Landep yang semula bertujuan untuk mengembalikan dan menjaga kesucian serta kekuatan sakti yang terkandung dari 
-                                benda - benda pusaka seperti keris, tombak dan pedang, kini ritual Tumpek Landep dilaksanakan untuk mensucikan semua benda yang
-                                terbuat dari bahan dasar besi, logam dan emas seperti mobil, motor, perahu, cangkul, pisau, senjata api, komputer, televisi dan
-                                lain-lain yang dapat membantu memudahkan dan memberi perlindungan kepada penggunanya dalam menjalani kehidupan.
-                            </p>
-                        </div>
+                <div class="guide">
+                    <div class="current-province">
+                        <ion-icon name="information-circle-outline" class="ikon"></ion-icon>
                     </div>
-            
-                    <div class="right">
-                        <div style="background-image: url(../../../images/ngaben.jpg);"></div>
-                        <div style="background-image: url(../../../images/melasti.jpeg);"></div>
-                        <div style="background-image: url(../../../images/tumpek.jpeg);"></div>
+                    <div class="dropdown-container" id="guide2">
+                        <p>Try clicking the cylinder under!</p>
                     </div>
+                </div>
+
+                <div class="content-makanan">
+                    <div class="container-makanan">
+                        <div class="content-slide">
+                            <input type="radio" name="select1" id="slide1u" checked>
+                            <input type="radio" name="select1" id="slide2u">
+                            <input type="radio" name="select1" id="slide3u">    
+                            <input type="checkbox" id="slideImgu">
             
-                    <div class="action-buttons">
-                        <button class="down">
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </button>
-                        <button class="up">
-                            <i class="fa-solid fa-chevron-up"></i>
-                        </button>
+                            <div class="slider-makanan">
+                                <label for="slide1u" class="slide slide1u"></label>
+                                <label for="slide2u" class="slide slide2u"></label>
+                                <label for="slide3u" class="slide slide3u"></label>
+                            </div>
+            
+                            <div class="inner">
+                                <label for="slideImg" class="gmbr">
+                                    <img class="img1u" src="../../../images/ngaben.jpg">
+                                </label>
+                                <div class="konten konten1u">
+                                    <div class="jdul">Ngaben</div>
+                                    <div class="isip">
+                                        Ngaben merupakan upacara adat prosesi pembakaran jenazah di Bali yang dipimpin oleh pendeta. Ngaben merupakan upacara yang penting dan sakral bagi orang Bali dan upacara ini harus 
+                                        dilakukan meskipun waktunya agak lama (dilakukan beberapa tahun kemudian) karena masyarkat bali memercayai bahwa upacara Ngaben dapat membebaskan roh orang 
+                                        yang telah meninggal dari ikatan duniawi menuju surga dan menunggu reinkarnasi. <br>
+                                        Upacara ngaben merupakan rangkaian kegiatan yang berlangsung beberapa hari lamanya mulai dari penyelenggaraan jenazah sampai membuang abu ke laut besar dan 
+                                        memerlukan biaya yang cukup besar untuk membuat sesajen dan perlengkapan lainnya. 
+                                    </div>
+                                    <a href="https://katadata.co.id/agung/berita/63294be7b5374/mengenal-tradisi-ngaben-cara-masyarakat-hindu-bali-menuju-nirwana"><button>Read More</button></a>
+                                </div>
+                            </div>
+            
+                            <div class="inner">
+                                <label for="slideImg" class="gmbr">
+                                    <img class="img2u" src="../../../images/melasti.jpeg">
+                                </label>
+                                <div class="konten konten2u">
+                                    <div class="jdul">Melasti</div>
+                                    <div class="isip">
+                                        Upacara Melasti merupakan sebuah tradisi yang dilakukan oleh umat Hindu dengan cara membasuh muka atau menyentuh air disumber mata air seperti pinggir laut atau
+                                        danau. Upacara ini biasanya dilaksanakan 3 - 4 hari sebelum Hari Raya Nyepi sebagai upaya penyucian diri dan alam dan sebagai simbol menghanyutkan kotoran alam dengan 
+                                        menggunakan air kehidupan. Diluar rangkaian hari suci Nyepi upacara melasti juga sering dilaksanakan oleh umat Hindu. Misalnya sebagai rangkaian dari karya agung 
+                                        pada suatu pura. Sejumlah objek wisata pantai populer dijadikan sebagai tujuan Melasti adalah pantai Kuta, Jimbaran, Padang Galak Sanur dan Amed.    
+                                    </div>
+                                    <a href="https://www.balitoursclub.net/upacara-melasti-di-bali/"><button>Read More</button></a>
+                                </div>
+                            </div>
+            
+                            <div class="inner">
+                                <label for="slideImg" class="gmbr">
+                                    <img class="img3u" src="../../../images/tumpek.jpeg">
+                                </label>
+                                <div class="konten konten3u">
+                                    <div class="jdul">Tumpek Landep</div>
+                                    <div class="isip">
+                                        Ritual Tumpek Landep merupakan bentuk rasa syukur umat Hindu terhadap Sang Hyang Widhi yang telah memberikan ketajaman pemikiran kepada manusia, adapun ketajaman itu 
+                                        disimbolkan layaknya senjata yang berbentuk lancip/runcing seperti keris, tombak dan pedang. Dewasa kini, senjata lancip itu sudah meluas pengertiannya. Tak hanya keris 
+                                        dan tombak, juga benda-benda hasil cipta karsa manusia yang dapat mempermudah hidup seperti sepeda motor, mobil, mesin, komputer dan sebagainya. 
+                                        yang dapat membantu memudahkan dan memberi perlindungan kepada penggunanya dalam menjalani kehidupan.
+                                    </div>
+                                    <a href="https://tamanbali.desa.id/artikel/2017/9/2/makna-dan-filosofi-tumpek-landep-yang-tidak-boleh-dilupakan"><button>Read More</button></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -457,62 +591,68 @@
             <input type="checkbox" name="example_accordion" id="section6" class="accordion__input">
             <label for="section6" class="accordion__label">Section #6: Destinasi Wisata</label>
             <div class="accordion__content">
+                <div class="guide">
+                    <div class="current-province">
+                        <ion-icon name="information-circle-outline" class="ikon"></ion-icon>
+                    </div>
+                    <div class="dropdown-container" id="guide2">
+                        <p>Hover on the inner box !</p>
+                    </div>
+                </div>
+
                 <div class="container-rumah">
-                    <div class="card" style="--clr:#009688;">
+                    <div class="card" style="--clr:#0b495e;">
                         <div class="imgBx">
                             <img src="../../../images/Tanah Lot.jpg" alt="">
                         </div>
                         <div class="content-rumah">
                             <h2>Tanah Lot</h2>
                             <p>Tanah Lot merupakan salah satu tempat wisata yang paling banyak dikunjungi di Bali, terutama oleh para wisatawan 
-                                yang mencari keindahan alam dan keunikan kebudayaan Bali.
+                                yang mencari keindahan alam dan keunikan kebudayaan Bali. Tanah Lot terletak di Tabanan, 30 km dari Denpasar. 
+                                Pada Tanah Lot juga terdapat Pura Tanah Lot yang berdiri tegak diatas karang sekitar 300 meter di lepas pantai 
+                                menghadap ke laut lepas. 
                             </p>
+                            <div class="tombol">
+                                <a href="https://www.indonesia.travel/id/id/destinasi/bali-nusa-tenggara/tanah-lot"><button>Read More</button></a>
+                            </div>
                         </div>            
                     </div>
             
-                    <div class="card" style="--clr:#ff3e7f;">
+                    <div class="card" style="--clr:#0b495e;">
                         <div class="imgBx">
                             <img src="../../../images/GWK.jpg" alt="">
                         </div>
                         <div class="content-rumah">
                             <h2>Garuda Wisnu Kencana</h2>
-                            <p>Garuda Wisnu Kencana (GWK) adalah sebuah taman budaya yang terletak di desa Ungasan, Kabupaten Badung, Bali, 
-                                Indonesia. Taman budaya ini memiliki patung Garuda Wisnu Kencana, yang merupakan patung tertinggi ketiga di dunia 
-                                dengan ketinggian 121 meter, terdiri dari patung Garuda (burung mitologi Hindu) dengan lebar sayap 64 meter dan 
-                                patung Wisnu (dewa pelindung) dengan tinggi 20 meter. Selain itu, GWK juga memiliki area teater, galeri seni, toko 
-                                suvenir, restoran, serta taman rekreasi dan pemandangan yang menarik.Taman budaya Garuda Wisnu Kencana dibangun 
-                                sebagai simbol dari kebangkitan budaya Indonesia dan menjadi salah satu objek wisata terkenal di Bali. Selain 
-                                menyajikan patung Garuda Wisnu Kencana yang megah, GWK juga menampilkan berbagai pertunjukan seni dan budaya 
-                                Indonesia, seperti tari Kecak, tari Barong, dan pertunjukan musik tradisional Bali.
-                                Selain itu, di dalam taman budaya GWK juga terdapat galeri seni yang menampilkan karya-karya seniman Indonesia dan 
-                                toko suvenir yang menjual berbagai macam produk kerajinan tangan Indonesia. Wisatawan juga dapat menikmati berbagai
-                                hidangan kuliner Indonesia dan internasional di restoran-restoran yang tersedia di dalam area GWK.
+                            <p class="gwk">Garuda Wisnu Kencana (GWK) adalah sebuah taman budaya yang terletak di desa Ungasan, Kabupaten Badung, Bali.
+                                GWK memiliki patung Garuda Wisnu Kencana, yang merupakan patung <b>tertinggi ketiga di dunia</b> 
+                                dengan ketinggian 121 meter, terdiri dari patung Burung Garuda dan Patung Dewa Wisnu. Selain itu, GWK juga memiliki area area lainnya.
+                                Taman budaya Garuda Wisnu Kencana dibangun 
+                                sebagai simbol dari kebangkitan budaya Indonesia dan menjadi salah satu objek wisata terkenal di Bali. 
                             </p>
+                            <div class="tombol">
+                                <a href="https://www.detik.com/bali/wisata/d-6370356/garuda-wisnu-kencana-gwk-bali-lokasi-harga-tiket-dan-fasilitasnya"><button>Read More</button></a>
+                            </div>
                         </div>            
                     </div>
             
-                    <div class="card" style="--clr:#03a9f4;">
+                    <div class="card" style="--clr:#0b495e;">
                         <div class="imgBx">
                             <img src="../../../images/Pura.jpeg" alt="">
                         </div>
                         <div class="content-rumah">
                             <h2>Pura Luhur Uluwatu</h2>
-                            <p>Pura Luhur Uluwatu adalah sebuah pura Hindu yang terletak di ujung selatan Bali, tepatnya di desa Pecatu, Kecamatan 
-                                Kuta Selatan, Kabupaten Badung. Pura Luhur Uluwatu dibangun pada abad ke-11 oleh seorang raja Bali yang bernama Mpu 
-                                Kuturan, dan saat ini menjadi salah satu objek wisata terkenal di Bali.
-                                Pura Luhur Uluwatu terletak di atas tebing yang menjorok ke laut dan memiliki pemandangan yang sangat indah, terutama
-                                saat matahari terbenam. Selain itu, pura ini juga dikenal sebagai tempat yang suci dan menjadi salah satu pura paling 
-                                penting di Bali. Di dalam pura, terdapat beberapa bangunan suci dan beberapa patung dewa dan dewi Hindu, termasuk 
-                                patung Ganesha, dewa yang dipercayai sebagai penghalau rintangan.
-                                Selain sebagai tempat suci, Pura Luhur Uluwatu juga terkenal sebagai tempat yang menarik bagi para wisatawan. Salah 
-                                satu atraksi yang paling terkenal adalah pertunjukan tari Kecak yang dilakukan di area pura. Pertunjukan tari Kecak di
-                                Pura Luhur Uluwatu biasanya dimulai pada sore hari, menjelang matahari terbenam, dan dilakukan di area teater yang 
-                                terletak di luar pura. Pertunjukan ini melibatkan puluhan pria yang duduk melingkar di atas panggung dan menyerukan 
-                                suara "cak" secara bersamaan, sambil menari mengikuti cerita Ramayana.
-                                Untuk masuk ke dalam area Pura Luhur Uluwatu, wisatawan perlu membayar tiket masuk yang cukup terjangkau. Selain itu, 
-                                wisatawan juga diwajibkan untuk mengenakan kain sarung yang disediakan di area pura untuk menghormati kesucian tempat 
-                                tersebut.  
+                            <p class="gwk1">Pura Luhur Uluwatu adalah sebuah pura Hindu yang terletak di desa Pecatu, Kecamatan Kuta Selatan, Kabupaten 
+                                Badung. Pura Luhur Uluwatu terletak di atas tebing yang menjorok ke laut dan memiliki pemandangan yang sangat indah, 
+                                Selain itu, pura ini juga dikenal sebagai tempat yang suci yang di dalamnya terdapat beberapa bangunan suci dan beberapa 
+                                patung dewa dan dewi Hindu.
+                                Pura Luhur Uluwatu juga terkenal sebagai rumah bagi gerombolan kera ekor panjang abu-abu dan tempat pergelaran pertunjukan 
+                                cerita dari kitab ramayana dan tarian Kecak yang dilakukan di area teater pura pada sore hari.
+                               
                             </p>
+                            <div class="tombol">
+                                <a href="https://www.gotravelaindonesia.com/pura-luhur-uluwatu/"><button>Read More</button></a>
+                            </div>
                         </div>            
                     </div>
                 </div>
@@ -524,41 +664,51 @@
             <input type="checkbox" name="example_accordion" id="section7" class="accordion__input">
             <label for="section7" class="accordion__label">Section #7: Lagu Adat</label>
             <div class="accordion__content">
+                <div class="guide">
+                    <div class="current-province">
+                        <ion-icon name="information-circle-outline" class="ikon"></ion-icon>
+                    </div>
+                    <div class="dropdown-container" id="guide2">
+                        <p>You can play the video and change tabs by clicking the song title above!</p>
+                    </div>
+                </div>
+
                 <div class="mytabs">
                     <input type="radio" id="tab1" name="page1" checked="checked">
                     <label for="tab1">Dewa Ayu</label>
                     <div class="tab">
                         <h2>Dewa Ayu</h2>
+                        <video src="../../../audio/Dewa Ayu.mp4" controls></video>
                         <p>Lagu adat Dewa Ayu adalah salah satu lagu tradisional dari Bali, Indonesia. Lagu ini biasanya dinyanyikan oleh para wanita dalam upacara-upacara adat Bali, seperti upacara pernikahan, upacara keagamaan, atau upacara kehormatan.
                             Secara musikal, lagu Dewa Ayu memiliki irama yang khas dengan menggunakan instrumen tradisional Bali seperti gamelan, gender, dan kendang. Lirik lagu Dewa Ayu biasanya berisi doa atau ungkapan syukur kepada para dewa dan nenek moyang.
                             Lagu Dewa Ayu biasanya dinyanyikan dalam bahasa Bali yang klasik, sehingga tidak mudah dimengerti oleh orang yang tidak berasal dari Bali. Namun, dalam beberapa versi modern, lagu ini dapat disertai dengan terjemahan dalam bahasa Indonesia atau bahasa Inggris.
                             Lagu Dewa Ayu memiliki makna yang dalam dan menjadi simbol kebersamaan dalam budaya Bali. Lagu ini juga sering dijadikan sebagai sarana untuk menjaga keharmonisan dalam masyarakat Bali.
                         </p>
-                        <video src="../../../audio/Dewa Ayu.mp4" controls></video>
+                        
                     </div>
             
                     <input type="radio" id="tab2" name="page1">
                     <label for="tab2">Janger</label>
                     <div class="tab">
                         <h2>Janger</h2>
+                        <video src="../../../audio/Janger.mp4" controls></video>
                         <p>Janger adalah salah satu lagu tradisional Bali yang terkenal. Lagu ini berasal dari daerah Buleleng di Bali, dan biasanya dinyanyikan oleh kelompok pria dan wanita dalam acara-acara adat atau pertunjukan seni.
                             Secara musikal, lagu Janger memiliki irama yang ceria dan menggembirakan. Lagu ini biasanya diiringi dengan alat musik tradisional Bali seperti gamelan, kendang, dan ceng-ceng. Lirik lagu Janger biasanya berisi tentang cinta dan keindahan alam Bali.
                             Lagu Janger biasanya dinyanyikan oleh kelompok pria dan wanita secara bergantian. Pada bagian awal lagu, kelompok pria akan memulai dengan lagu yang berisi tentang keindahan Bali dan mengajak kelompok wanita untuk bergabung. Kemudian, kelompok wanita akan menjawab dengan lagu yang berisi tentang cinta dan mengajak kelompok pria untuk menari bersama.
                             Tarian yang menemani lagu Janger biasanya berisi gerakan yang ceria dan lincah, sehingga cocok untuk menghibur penonton. Selain itu, lagu Janger juga sering dipadukan dengan tari Topeng, di mana para penari mengenakan topeng tradisional Bali.
                             Lagu Janger menjadi simbol kebersamaan dan keindahan alam Bali. Lagu ini juga menjadi ciri khas budaya Bali yang terkenal di seluruh dunia.
                         </p>
-                        <video src="../../../audio/Janger.mp4" controls></video>
                     </div>
             
                     <input type="radio" id="tab3" name="page1">
                     <label for="tab3">Ngusak Asik</label>
                     <div class="tab">
                         <h2>Ngusak Asik</h2>
+                        <video src="../../../audio/NgusakAsik.mp4" controls></video>
                         <p>Ngusak Asik sebagai salah satu lagu daerah telah diakui secara resmi sebagai lagu yang berasal dari Bali. Lagu Ngusak Asik yang berasal dari Bali ini memilikin tempo cepat dan melodi jenaka. Seperti kebanyakan lagu Bali, lagu ini juga banyak menggunakan inversi dan repetisi berirama.
                             Lagu ini secara garis besar menggambarkan ciri khas dan juga adat istiadat penduduk setempat yang menceritakan tentang kisah cinta antara seorang anak laki-laki dan seorang gadis.
                             Lagu Ngusak Asik sering dipertunjukkan pada berbagai acara adat seperti upacara keagamaan, pernikahan, dan penyambutan tamu penting. Lagu ini menjadi salah satu bagian dari seni dan budaya Bali yang sangat dihargai oleh masyarakat Bali dan juga menjadi daya tarik bagi wisatawan yang berkunjung ke Bali.
                         </p>
-                        <video src="../../../audio/NgusakAsik.mp4" controls></video>
                     </div>
                 </div>
             </div>
@@ -569,59 +719,90 @@
             <input type="checkbox" name="example_accordion" id="section8" class="accordion__input">
             <label for="section8" class="accordion__label">Section #8: Tari Adat</label>
             <div class="accordion__content">
-                <div class="tempat">
+                <div class="guide">
+                    <div class="current-province">
+                        <ion-icon name="information-circle-outline" class="ikon"></ion-icon>
+                    </div>
+                    <div class="dropdown-container" id="guide2">
+                        <p>Read Only !</p>
+                    </div>
+                </div>
+                
+                <div class="mvv-container">
+                    <div class="mv-block">
+                        <div class="image">
+                            <img src="../../../images/TariPendet.jpeg" alt="">
+                        </div>
+                        <div class="kata">
+                            <h7>Gamelan Bali</h7>
+                            <p class ="kecil" align="justify">
+                                Tari pendet adalah tarian pemujaan yang sering dipentaskan di pura oleh umat Hindu sebagai bagian dari prosesi 
+                                ibadah untuk menyambut datangnya Dewa dari langit. Jenis tarian Bali ini dimainkan oleh penari wanita dalam jumlah 
+                                tertentu dengan mengenakan pakaian adat khas Bali. Para penari dilengkapi pula dengan hiasan bunga serta membawa 
+                                sesajen.Tarian ini juga berkembang menjadi tari penyambutan atau lebih dikenal tari selamat datang bagi tamu atau 
+                                wisatawan yang berkunjung ke Pulau Dewata. Selain itu, tari pendet juga kerap dipentaskan saat pembukaan acara-acara
+                                resmi.
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="mv-block">
+                        <div class="image">
+                            <img src="../../../images/TariLegong.jpg" alt="">
+                        </div>
+                        <div class="kata">
+                            <h7>Tari Legong</h7>
+                            <p align="justify">
+                                Menurut sejarahnya, tari legong adalah tarian yang berasal dari lingkungan keraton. Akan tetapi seiring perkembangan
+                                zaman, tarian ini menyebar di masyarakat dan dapat dijumpai saat acara-acara lain. Kata “legong” mempunyai makna, 
+                                yaitu “leg” atau luwes dan “gong” yang berarti gamelan tradisional Bali.Saat menarikan tarian ini, penari legong 
+                                yang berjumlah 2 atau 3 orang akan membawakan gerakan elok dan gemulai dengan membawa kipas. Gerakan penari akan 
+                                diiringi oleh alat musik tradisional Bali. Beberapa jenis tari legon Bali adalah legong keraton atau lasem, legong 
+                                jobog, legong legod bawa, legong sudarsana, dan legong kuntul.
+                            </p>
+                        </div>
+                    </div>
+            
+                    <div class="mv-block">
+                        <div class="image">
+                            <img src="../../../images/TariKecak.jpg" alt="">
+                        </div>
+                        <div class="kata">
+                            <h7>Tari Kecak</h7>
+                            <p align = "justify">
+                                Tari kecak adalah tarian Bali yang sangat terkenal. Tarian ini dimainkan oleh puluhan bahkan ratusan penari laki-
+                                laki yang membentuk formasi lingkaran. Ciri utama dari tari kecak adalah teriakan kata “cak cak cak” secara serentak
+                                oleh para penari dengan gerakan dua tangan keatas.Tarian kecak mengisahkan tentang cerita Ramayana, yaitu saat 
+                                terjadinya pertempuran antara Rama yang dibantu oleh Hanoman untuk melawan Rahwana. Tari ini merupakan ciptaan dari
+                                seniman tari bali bernama Wayan Limbak yang bekerjasama dengan seniman lukis Jerman bernama Walter Spies pada tahun
+                                1930-an.
+                            </p>
+                        </div>
+                    </div>
 
-                    <div class="kartu active">
-                      <div class="shadow"></div> 
-                      <div class="label">
-                        <div class="icon" style="--color: green">
-                          <ion-icon name="sunny"></ion-icon>
+                    <div class="mv-block">
+                        <div class="image">
+                            <img src="../../../images/TariBarong.jpg" alt="">
                         </div>
-                        <div class="info">
-                          <div class="title">Tari Pendet</div>
-                          <div>Tarian Khas Bali</div>
+                        <div class="kata">
+                            <h7>Tari Barong</h7>
+                            <p align = "justify">
+                                Tari yang berasal dari Bali ini dimainkan oleh penari dengan mengenakan kostum barong berwajah seram berhiaskan 
+                                ornamen khas Bali. Kata barong dalam tarian ini diduga berasal dari kata “bahruang” atau berarti beruang. Meski 
+                                berasal dari akta beruang, akan tetapi banyak model topeng lain, seperti barong asu, baron blablasan, barong gajah, 
+                                barong macan dan sebagainya. Oleh beberapa masyarakat, topeng barong terkadang juga menjadi hiasan rumah. Tarian 
+                                barong dilakukan oleh dua orang penari laki-laki. Penari posisi depan adalah pemakai topeng, sedangkan penari yang 
+                                berda dibelakangnya bertugas untuk menggerakan tubuh dan ekor barong. Nilai, makna dan filosofi yang diangkat dalam
+                                tari barong Bali adalah peperangan antara sifat baik dan buruk. Sifat baik diwakili oleh barong, sedangkan sifat 
+                                jahat diwakili oleh rangda. Tarian ini sangat sakral dan hanya dipentaskan pada upacara ritual tertentu.
+                            </p>
                         </div>
-                      </div>
                     </div>
-              
-                    <div class="kartu">
-                      <div class="shadow"></div> 
-                      <div class="label">
-                        <div class="icon" style="--color: blue">
-                          <ion-icon name="sparkles"></ion-icon>
-                        </div>
-                        <div class="info">
-                          <div class="title">Tari Kecak</div>
-                          <div>Tarian Khas Bali</div>
-                        </div>
-                      </div>
+    
+                    <div class="tombol">
+                        <a href="https://rimbakita.com/tari-bali/"><button>Read More</button></a>
                     </div>
-              
-                    <div class="kartu">
-                      <div class="shadow"></div> 
-                      <div class="label">
-                        <div class="icon" style="--color: orange">
-                          <ion-icon name="thunderstorm"></ion-icon>
-                        </div>
-                        <div class="info">
-                          <div class="title">Tari Legong</div>
-                          <div>Tarian Khas Bali</div>
-                        </div>
-                      </div>
-                    </div>
-              
-                    <div class="kartu">
-                      <div class="shadow"></div> 
-                      <div class="label">
-                        <div class="icon" style="--color: black">
-                          <ion-icon name="snow"></ion-icon>
-                        </div>
-                        <div class="info">
-                          <div class="title">Tari Barong</div>
-                          <div>Tarian Khas Bali</div>
-                        </div>
-                      </div>
-                    </div>
+    
                 </div>
             </div>
         </div>

@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../../style/quiz1.css">
-    <script defer src="../../../script/quiz1.js"></script>
+    <link rel="stylesheet" href="../../../style/finalquiz.css">
+    <script defer src="../../../script/finalquiz.js"></script>
     <link rel="icon" href="../../../images/logo indocano 2.png">
 </head>
 <body>

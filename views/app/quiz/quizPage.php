@@ -1,4 +1,7 @@
-<?php session_start(); ?>
+<?php 
+    session_start();
+    include("../../../script/checkQuiz.php");
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -36,7 +39,7 @@
             </div>
 
             <div class="nav-logo">
-                <a href="../account/accountSettings.php"><ion-icon name="person-outline"></ion-icon></a>
+                <a href="../account/editProfile.php"><ion-icon name="person-outline"></ion-icon></a>
                 <span class="text">Account</span>
             </div>  
         </div>
@@ -50,12 +53,12 @@
                 <hr>
                 <div class="enrolled-province">
                     <div class="province-image">
-                        <img src="../../images/Provinsi Bali.png" alt="">
+                        <img src="../../../images/Provinsi Bali.png" alt="">
                     </div>
                     <div class="province-name">Provinsi Bali</div>
                 </div>
                 <hr>
-                <div class="add-new-province"><a href="../selection/selectionPage.html">Switch province</a></div>
+                <div class="add-new-province"><a href="../selection/selectionPage.php">Switch province</a></div>
             </div>
         </div>
     </nav>
@@ -76,7 +79,7 @@
                         <p>Minimum Passing Score : 60</p>
                     </div>
                     <div class="content-right">
-                        <a href="quiz1.php">Start Quiz</a>
+                        <button id="first-btn" href="quiz1.php">Start Quiz</button>
                     </div>
                 </div>
             </li>
@@ -92,10 +95,11 @@
                 <div class="content">
                     <div class="content-left">
                         <p>Total Questions : 10</p>
-                        <p>Minimum Passing Score : 65</p>
+                        <p>Minimum Passing Score : 70</p>
                     </div>
                     <div class="content-right">
-                        <a href="quiz2.php">Start Quiz</a>
+                        <button id="second-btn" href="quiz2.php">Start Quiz</button>
+                        <span id="warning2" class="warning"></span>
                     </div>
                 </div>
             </li>
@@ -110,16 +114,20 @@
                 <input type="radio" name="accordion" id="third">
                 <div class="content">
                     <div class="content-left">
-                        <p>Total Questions : 20</p>
+                        <p>Total Questions : 25</p>
                         <p>Minimum Passing Score : 75</p>
                     </div>
                     <div class="content-right">
-                        <a href="#">Start Quiz</a>
+                        <button id="final-btn" href="finalquiz.php">Start Quiz</button>
+                        <span id="warning3" class="warning"></span>
                     </div>            
                 </div>
             </li>
         </ul>
     </main>
+
+    <script src="../../../script/quizPage.js"></script>
+    <?php checkQuiz(); ?>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
